@@ -21,7 +21,7 @@ no_index:
 provides:
   Devel::PatchPerl:
     file: lib/Devel/PatchPerl.pm
-    version: 0.06
+    version: 0.08
 requires:
   File::chdir: 0.1003
   IO::File: 0
@@ -31,4 +31,4 @@ resources:
   homepage: http://github.com/bingos/devel-patchperl/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/bingos/devel-patchperl.git
-version: 0.06
+version: 0.08

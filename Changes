@@ -1,4 +1,14 @@
 ==============================
+2010-05-18 22:18:47 +0100 0.08
+==============================
+
+  commit 8631ee6c74fc8b38f770621bc834619ba9caf975
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue May 18 22:18:47 2010 +0100
+  
+    Found a more elegant way to deal with our 'isa' problem 
+
+==============================
 2010-05-18 09:10:40 +0100 0.06
 ==============================
 
