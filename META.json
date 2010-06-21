@@ -1,0 +1,42 @@
+{
+   "abstract" : "Patch perl source a la Devel::PPort's buildperl.pl",
+   "author" : [
+      "Chris Williams <chris@bingosnet.co.uk>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.101612, CPAN::Meta::Converter version 2.101670",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Devel-PatchPerl",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.31"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "File::pushd" : "1.00",
+            "IO::File" : 0,
+            "IPC::Cmd" : "0.58",
+            "perl" : "v5.6.0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "homepage" : "http://github.com/bingos/devel-patchperl/tree",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/bingos/devel-patchperl.git",
+         "web" : "http://github.com/bingos/devel-patchperl/tree"
+      }
+   },
+   "version" : "0.10"
+}
+

@@ -1,18 +1,53 @@
+
 use strict;
-use inc::Module::Install;
-name 'Devel-PatchPerl';
-author 'Chris Williams <chris@bingosnet.co.uk>';
-version_from 'lib/Devel/PatchPerl.pm';
-abstract_from 'lib/Devel/PatchPerl.pm';
-readme_from 'lib/Devel/PatchPerl.pm';
-license 'perl';
-auto_license holder => 'Chris Williams and Marcus Holland-Moritz';
-perl_version '5.006';
-build_requires 'Test::More' => 0.47;
-requires 'File::chdir' => '0.1003';
-requires 'IO::File' => 0;
-requires 'IPC::Cmd' => '0.58';
-auto_provides;
-githubmeta;
-makemaker_args(dist => { PREOP => "$^X ./tools/git-log.pl > ./Changes" });
-WriteAll();
+use warnings;
+
+ BEGIN { require v5.6.0; } 
+
+use ExtUtils::MakeMaker 6.31;
+
+
+
+my %WriteMakefileArgs = (
+  'ABSTRACT' => 'Patch perl source a la Devel::PPort\'s buildperl.pl',
+  'AUTHOR' => 'Chris Williams <chris@bingosnet.co.uk>',
+  'BUILD_REQUIRES' => {},
+  'CONFIGURE_REQUIRES' => {
+    'ExtUtils::MakeMaker' => '6.31'
+  },
+  'DISTNAME' => 'Devel-PatchPerl',
+  'EXE_FILES' => [],
+  'LICENSE' => 'perl',
+  'NAME' => 'Devel::PatchPerl',
+  'PREREQ_PM' => {
+    'File::pushd' => '1.00',
+    'IO::File' => '0',
+    'IPC::Cmd' => '0.58'
+  },
+  'VERSION' => '0.10',
+  'test' => {
+    'TESTS' => 't/*.t'
+  }
+);
+
+
+unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
+  my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};
+  my $pp = $WriteMakefileArgs{PREREQ_PM};
+  for my $mod ( keys %$br ) {
+    if ( exists $pp->{$mod} ) {
+      $pp->{$mod} = $br->{$mod} if $br->{$mod} > $pp->{$mod};
+    }
+    else {
+      $pp->{$mod} = $br->{$mod};
+    }
+  }
+}
+
+delete $WriteMakefileArgs{CONFIGURE_REQUIRES}
+  unless eval { ExtUtils::MakeMaker->VERSION(6.52) };
+
+WriteMakefile(%WriteMakefileArgs);
+
+
+

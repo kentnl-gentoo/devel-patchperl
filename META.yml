@@ -2,33 +2,22 @@
 abstract: "Patch perl source a la Devel::PPort's buildperl.pl"
 author:
   - 'Chris Williams <chris@bingosnet.co.uk>'
-build_requires:
-  ExtUtils::MakeMaker: 6.42
-  Test::More: 0.47
+build_requires: {}
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
-distribution_type: module
-generated_by: 'Module::Install version 0.97'
+  ExtUtils::MakeMaker: 6.31
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.101612, CPAN::Meta::Converter version 2.101670'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Devel-PatchPerl
-no_index:
-  directory:
-    - inc
-    - t
-provides:
-  Devel::PatchPerl:
-    file: lib/Devel/PatchPerl.pm
-    version: 0.08
 requires:
-  File::chdir: 0.1003
+  File::pushd: 1.00
   IO::File: 0
   IPC::Cmd: 0.58
-  perl: 5.6.0
+  perl: v5.6.0
 resources:
   homepage: http://github.com/bingos/devel-patchperl/tree
-  license: http://dev.perl.org/licenses/
   repository: git://github.com/bingos/devel-patchperl.git
-version: 0.08
+version: 0.10

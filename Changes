@@ -1,4 +1,14 @@
 ==============================
+2010-06-21 21:29:07 +0100 0.10
+==============================
+
+  commit 4029c7f726e27882ce6e94380c1dd8daaa8ca371
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon Jun 21 21:29:07 2010 +0100
+  
+    Switched to dzil and switched from File::chdir to File::pushd 
+
+==============================
 2010-05-18 22:18:47 +0100 0.08
 ==============================
 
@@ -29,6 +39,6 @@
   
     Fixed a bug calling patch_source as a exported function 
 
-==============
-End of Excerpt
-==============
+===================================
+End of changes in the last 365 days
+===================================
