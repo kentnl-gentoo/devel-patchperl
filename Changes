@@ -1,4 +1,14 @@
 ==============================
+2010-06-22 09:32:04 +0100 0.12
+==============================
+
+  commit 435296d955ec88a13b30663e9fa3c3a71ce466df
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Jun 22 09:32:04 2010 +0100
+  
+    Added patching of hints/netbsd.sh file for all perls. 
+
+==============================
 2010-06-21 21:29:07 +0100 0.10
 ==============================
 
