@@ -1,4 +1,15 @@
 ==============================
+2010-09-01 13:38:55 +0100 0.16
+==============================
+
+  commit 0f7ede5cdc62fb751e77939aacf741823be9f1c5
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Sep 1 13:38:55 2010 +0100
+  
+    Add the auto-determination of perl version from the current working
+    directory 
+
+==============================
 2010-09-01 13:22:41 +0100 0.14
 ==============================
 

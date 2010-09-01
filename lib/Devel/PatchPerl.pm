@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 BEGIN {
-  $Devel::PatchPerl::VERSION = '0.14';
+  $Devel::PatchPerl::VERSION = '0.16';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPort's buildperl.pl
@@ -127,6 +127,15 @@ sub patch_source {
   my $vers = shift;
   $vers = shift if eval { $vers->isa(__PACKAGE__) };
   my $source = shift || '.';
+  if ( !$vers and $source eq '.' ) {
+    $vers = _determine();
+    if ( $vers ) {
+      warn "Auto-guessed '$vers'\n";
+    }
+    else {
+      die "You didn't provide a perl version and I don't appear to be in a perl source tree\n";
+    }
+  }
   $source = File::Spec->rel2abs($source);
   warn "No patch utility found\n" unless $patch_exe;
   {
@@ -1822,7 +1831,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPort's buildperl.pl
 
 =head1 VERSION
 
-version 0.14
+version 0.16
 
 =head1 SYNOPSIS
 
@@ -1849,6 +1858,9 @@ functionality.
 
 Takes two parameters, a C<perl> version and the path to unwrapped perl source for that version.
 It dies on any errors.
+
+If you don't supply either a C<perl> version and the path to unwrapped perl source, it will assume
+the current working directory and attempt to auto-determine the C<perl> version.
 
 =back
 

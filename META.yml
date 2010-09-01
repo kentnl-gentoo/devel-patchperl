@@ -20,4 +20,4 @@ requires:
 resources:
   homepage: http://github.com/bingos/devel-patchperl/tree
   repository: git://github.com/bingos/devel-patchperl.git
-version: 0.14
+version: 0.16
