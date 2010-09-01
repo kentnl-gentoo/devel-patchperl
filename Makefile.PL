@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
- BEGIN { require v5.6.0; } 
+BEGIN { require v5.6.0; }
 
 use ExtUtils::MakeMaker 6.31;
 
@@ -24,7 +24,7 @@ my %WriteMakefileArgs = (
     'IO::File' => '0',
     'IPC::Cmd' => '0.58'
   },
-  'VERSION' => '0.12',
+  'VERSION' => '0.14',
   'test' => {
     'TESTS' => 't/*.t'
   }

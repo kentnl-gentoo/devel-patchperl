@@ -1,4 +1,19 @@
 ==============================
+2010-09-01 13:22:41 +0100 0.14
+==============================
+
+  commit 2e6b0543bf7180ff086a4d63a828ad41acc16ee1
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Sep 1 13:22:41 2010 +0100
+  
+    Patches added for makedepend.SH to fix various problems with 5.6.0 up
+    to 5.8.8
+
+    The infamous command-line and built-in fixes for gcc
+
+    The typo in one of the sed replacement lines. 
+
+==============================
 2010-06-22 09:32:04 +0100 0.12
 ==============================
 
