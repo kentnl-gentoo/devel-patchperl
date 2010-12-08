@@ -2,7 +2,7 @@ NAME
     Devel::PatchPerl - Patch perl source a la Devel::PPort's buildperl.pl
 
 VERSION
-    version 0.16
+    version 0.18
 
 SYNOPSIS
       use strict;

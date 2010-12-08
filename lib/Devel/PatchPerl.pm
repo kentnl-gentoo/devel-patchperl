@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 BEGIN {
-  $Devel::PatchPerl::VERSION = '0.16';
+  $Devel::PatchPerl::VERSION = '0.18';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPort's buildperl.pl
@@ -533,6 +533,16 @@ esac
 # NetBSD/sparc 1.5.3/1.6.1 dumps core in the semid_ds test of Configure.
 case `uname -m` in
 sparc) d_semctl_semid_ds=undef ;;
+esac
+
+# malloc wrap works
+case "\$usemallocwrap" in
+'') usemallocwrap='define' ;;
+esac
+
+# don't use perl malloc by default
+case "\$usemymalloc" in
+'') usemymalloc=n ;;
 esac
 BADGER
 close $fh;
@@ -1831,7 +1841,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPort's buildperl.pl
 
 =head1 VERSION
 
-version 0.16
+version 0.18
 
 =head1 SYNOPSIS
 
