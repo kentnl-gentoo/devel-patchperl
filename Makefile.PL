@@ -22,9 +22,9 @@ my %WriteMakefileArgs = (
   'PREREQ_PM' => {
     'File::pushd' => '1.00',
     'IO::File' => '0',
-    'IPC::Cmd' => '0.58'
+    'IPC::Cmd' => '0.40'
   },
-  'VERSION' => '0.18',
+  'VERSION' => '0.20',
   'test' => {
     'TESTS' => 't/*.t'
   }
