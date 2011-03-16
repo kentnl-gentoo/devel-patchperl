@@ -5,6 +5,7 @@ META.json
 META.yml
 Makefile.PL
 README
+bin/patchperl
 dist.ini
 lib/Devel/PatchPerl.pm
 lib/Devel/PatchPerl/Hints.pm

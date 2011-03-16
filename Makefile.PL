@@ -16,7 +16,9 @@ my %WriteMakefileArgs = (
     'ExtUtils::MakeMaker' => '6.31'
   },
   'DISTNAME' => 'Devel-PatchPerl',
-  'EXE_FILES' => [],
+  'EXE_FILES' => [
+    'bin/patchperl'
+  ],
   'LICENSE' => 'perl',
   'NAME' => 'Devel::PatchPerl',
   'PREREQ_PM' => {
@@ -25,7 +27,7 @@ my %WriteMakefileArgs = (
     'IPC::Cmd' => '0.40',
     'MIME::Base64' => '0'
   },
-  'VERSION' => '0.24',
+  'VERSION' => '0.26',
   'test' => {
     'TESTS' => 't/*.t'
   }

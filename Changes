@@ -1,4 +1,29 @@
 ==============================
+2011-03-16 13:56:15 +0000 0.26
+==============================
+
+  commit 6207abb679ef79bf6f899ffc5f735e5b62a18e3f
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Mar 16 13:56:15 2011 +0000
+  
+    Bump version
+
+  commit 0c7f4bcd0027a164c036b06dc3c4c8f4ff39a65c
+  Author: Florian Ragwitz <rafl@debian.org>
+  Date:   Wed Mar 16 14:33:56 2011 +0100
+  
+    Add a patchperl utility
+
+  commit 39a3ddb15c6637c2ee90640d528d2eda9a2d7fd9
+  Author: Florian Ragwitz <rafl@debian.org>
+  Date:   Wed Mar 16 14:28:22 2011 +0100
+  
+    Allow version guessing on paths other than '.'
+
+    Also rename _determine to the more descriptive _determine_version
+    while we're at it. 
+
+==============================
 2011-03-16 13:12:29 +0000 0.24
 ==============================
 
