@@ -1,4 +1,26 @@
 ==============================
+2011-03-16 13:12:29 +0000 0.24
+==============================
+
+  commit bef4dbc7a8de0d806fd036203b1bec5929d77e88
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Mar 16 13:12:29 2011 +0000
+  
+    Change PatchPerl to use Hints and bump version to 0.24
+
+  commit 52d2af66e7f0518555d15703ede3d8c19571606b
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Mar 16 10:47:43 2011 +0000
+  
+    Updated Hints implementation and added test for it
+
+  commit b3b041d95eccfb3d34227cd9e4e9e16877b328f4
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Mar 16 10:20:38 2011 +0000
+  
+    Added ::Hints module to handle patching hints files 
+
+==============================
 2011-03-16 00:28:05 +0000 0.22
 ==============================
 
