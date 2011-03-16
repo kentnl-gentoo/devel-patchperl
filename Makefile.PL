@@ -24,7 +24,7 @@ my %WriteMakefileArgs = (
     'IO::File' => '0',
     'IPC::Cmd' => '0.40'
   },
-  'VERSION' => '0.20',
+  'VERSION' => '0.22',
   'test' => {
     'TESTS' => 't/*.t'
   }

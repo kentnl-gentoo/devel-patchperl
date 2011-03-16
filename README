@@ -2,7 +2,7 @@ NAME
     Devel::PatchPerl - Patch perl source a la Devel::PPort's buildperl.pl
 
 VERSION
-    version 0.20
+    version 0.22
 
 SYNOPSIS
       use strict;
@@ -35,7 +35,7 @@ AUTHOR
     Chris Williams <chris@bingosnet.co.uk>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2010 by Chris Williams and Marcus
+    This software is copyright (c) 2011 by Chris Williams and Marcus
     Holland-Moritz.
 
     This is free software; you can redistribute it and/or modify it under
