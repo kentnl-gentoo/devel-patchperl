@@ -1,4 +1,15 @@
 ==============================
+2011-03-19 07:51:23 +0000 0.28
+==============================
+
+  commit 21843164fcdc2d919e0ec3b773c300d45d57d93a
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sat Mar 19 07:51:23 2011 +0000
+  
+    Resolve a fatal regression in patch_hints that meant the actual hints
+    file didn't get actually patched. Doh. 
+
+==============================
 2011-03-16 13:56:15 +0000 0.26
 ==============================
 

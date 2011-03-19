@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 BEGIN {
-  $Devel::PatchPerl::VERSION = '0.26';
+  $Devel::PatchPerl::VERSION = '0.28';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPort's buildperl.pl
@@ -215,7 +215,7 @@ sub _patch_hints {
   return unless my ($file,$data) = hint_file();
   my $path = File::Spec->catfile( 'hints', $file );
   chmod 0755, $path or die "$!\n";
-  open my $fh, '>', $file or die "$!\n";
+  open my $fh, '>', $path or die "$!\n";
   print $fh $data;
   close $fh;
   return 1;
@@ -1634,7 +1634,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPort's buildperl.pl
 
 =head1 VERSION
 
-version 0.26
+version 0.28
 
 =head1 SYNOPSIS
 
