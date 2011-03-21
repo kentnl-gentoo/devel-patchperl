@@ -1,4 +1,21 @@
 ==============================
+2011-03-21 22:05:51 +0000 0.30
+==============================
+
+  commit 336b84b63407d1cc6783d5bb6226d7ff2ffef043
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon Mar 21 22:05:51 2011 +0000
+  
+    Bump version to 0.30
+
+  commit 59a7ba098124e7175baaa5b7e441b8a1276492fc
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon Mar 21 22:03:03 2011 +0000
+  
+    Add hints for openbsd, to resolve issues with malloc on OpenBSD >=
+    3.7 
+
+==============================
 2011-03-19 07:51:23 +0000 0.28
 ==============================
 
