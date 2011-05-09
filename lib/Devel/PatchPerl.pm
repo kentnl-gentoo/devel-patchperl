@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 BEGIN {
-  $Devel::PatchPerl::VERSION = '0.30';
+  $Devel::PatchPerl::VERSION = '0.32';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPort's buildperl.pl
@@ -120,6 +120,14 @@ my @patch = (
             ],
     subs => [
               [ \&_patch_makedepend_SH ],
+            ],
+  },
+  {
+    perl => [
+              qr/^5\.1[0-2]/,
+            ],
+    subs => [
+              [ \&_patch_archive_tar_tests ],
             ],
   },
 );
@@ -1621,6 +1629,66 @@ BADGER
   }
 }
 
+sub _patch_archive_tar_tests
+{
+  my $perl = shift;
+  if ($perl =~ /^5\.10/) {
+    _patch(<<'END');
+--- lib/Archive/Tar/t/02_methods.t
++++ lib/Archive/Tar/t/02_methods.t
+@@ -70,6 +70,20 @@ my $LONG_FILE = qq[directory/really-really-really-really-really-really-really-re
+ my $TOO_LONG    =   ($^O eq 'MSWin32' or $^O eq 'cygwin' or $^O eq 'VMS')
+                     && length( cwd(). $LONG_FILE ) > 247;
+ 
++if(!$TOO_LONG) {
++    my $alt = File::Spec->catfile( cwd(), $LONG_FILE);
++    eval 'mkpath([$alt]);';
++    if($@)
++    {
++        $TOO_LONG = 1;
++    }
++    else
++    {
++        $@ = '';
++        my $base = File::Spec->catfile( cwd(), 'directory');
++        rmtree $base;
++    }
++}
+ ### warn if we are going to skip long file names
+ if ($TOO_LONG) {
+     diag("No long filename support - long filename extraction disabled") if ! $ENV{PERL_CORE};
+END
+  }
+  else {
+    _patch(<<'END');
+--- cpan/Archive-Tar/t/02_methods.t
++++ cpan/Archive-Tar/t/02_methods.t
+@@ -70,6 +70,20 @@ my $LONG_FILE = qq[directory/really-really-really-really-really-really-really-re
+ my $TOO_LONG    =   ($^O eq 'MSWin32' or $^O eq 'cygwin' or $^O eq 'VMS')
+                     && length( cwd(). $LONG_FILE ) > 247;
+ 
++if(!$TOO_LONG) {
++    my $alt = File::Spec->catfile( cwd(), $LONG_FILE);
++    eval 'mkpath([$alt]);';
++    if($@)
++    {
++        $TOO_LONG = 1;
++    }
++    else
++    {
++        $@ = '';
++        my $base = File::Spec->catfile( cwd(), 'directory');
++        rmtree $base;
++    }
++}
+ ### warn if we are going to skip long file names
+ if ($TOO_LONG) {
+     diag("No long filename support - long filename extraction disabled") if ! $ENV{PERL_CORE};
+END
+  }
+}
+
+
 qq[patchin'];
 
 
@@ -1634,7 +1702,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPort's buildperl.pl
 
 =head1 VERSION
 
-version 0.30
+version 0.32
 
 =head1 SYNOPSIS
 

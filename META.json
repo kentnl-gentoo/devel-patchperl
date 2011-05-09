@@ -4,7 +4,7 @@
       "Chris Williams <chris@bingosnet.co.uk>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110580",
+   "generated_by" : "Dist::Zilla version 4.200006, CPAN::Meta::Converter version 2.110930",
    "license" : [
       "perl_5"
    ],
@@ -16,7 +16,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.31"
+            "ExtUtils::MakeMaker" : "6.30"
          }
       },
       "runtime" : {
@@ -31,13 +31,13 @@
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://github.com/bingos/devel-patchperl/tree",
+      "homepage" : "http://github.com/bingos/devel-patchperl",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/bingos/devel-patchperl.git",
-         "web" : "http://github.com/bingos/devel-patchperl/tree"
+         "url" : "http://github.com/bingos/devel-patchperl",
+         "web" : "http://github.com/bingos/devel-patchperl"
       }
    },
-   "version" : "0.30"
+   "version" : "0.32"
 }
 

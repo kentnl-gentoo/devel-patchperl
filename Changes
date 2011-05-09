@@ -1,4 +1,40 @@
 ==============================
+2011-05-09 11:36:45 +0100 0.32
+==============================
+
+  commit 6a2f21fca1def7b08ddc5dbac83931a69a37fdb9
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon May 9 11:36:45 2011 +0100
+  
+    Bump version to 0.32
+
+  commit 99571866b79b0b2c31b49794ca2e515faf78fc53
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon May 9 11:35:23 2011 +0100
+  
+    Add another sub-test to the hints file test.
+
+  commit 32e5c54feecc7406a576524d714eb7a128753328
+  Author: Dave Rolsky <autarch@urth.org>
+  Date:   Sun May 8 15:30:53 2011 -0500
+  
+    Add patches to work around an issue with older Archive-Tar version
+    tests on ecryptfs
+
+    See https://bugs.launchpad.net/ecryptfs/+bug/344878 and
+    https://rt.cpan.org/Ticket/Display.html?id=57312
+
+    Newer versions of Ubuntu offer to encrypt your home dir as part of
+    the installation.
+
+  commit 7b5d94e3a2e26191a3e03a5198c07a780668c30a
+  Author: Dave Rolsky <autarch@urth.org>
+  Date:   Sun May 8 14:23:36 2011 -0500
+  
+    Add the linux hints file from blead to accomodate Ubuntu 11.04 libs
+    path change 
+
+==============================
 2011-03-21 22:05:51 +0000 0.30
 ==============================
 
