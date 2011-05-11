@@ -1,4 +1,24 @@
 ==============================
+2011-05-11 09:16:15 +0100 0.34
+==============================
+
+  commit d4a8f9c8314afd9f73d82e83165621c93faa2b2d
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed May 11 09:16:15 2011 +0100
+  
+    Bump version
+
+  commit 3dcec38b38fae48166a914b6be18ad734a9f1c41
+  Author: punytan <punytan@gmail.com>
+  Date:   Wed May 11 13:32:42 2011 +0800
+  
+    Add a patch to work around Ubuntu lib paths
+
+    This is the same patch as
+    https://github.com/mirrors/perl/commit/8313e401231663db6f72d5c2936ef3
+    8a4d2d399c 
+
+==============================
 2011-05-09 11:36:45 +0100 0.32
 ==============================
 
