@@ -1,4 +1,23 @@
 ==============================
+2011-05-14 10:07:23 +0100 0.36
+==============================
+
+  commit 9adaa25602a33f3946c2e0108c4e433d91a7ebcf
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sat May 14 10:07:23 2011 +0100
+  
+    chmod of hints files was too aggressive, make it only set 644 instead
+    of 755.
+
+    The 5.13.x branch of perls introduced 'porting/exec-bit.t' which is
+    failing
+
+    when files that shouldn't have execute bit in the source tree do.
+
+    Highlighted by Randy Stauner (magnificent-tears) as an issue on
+    Github. 
+
+==============================
 2011-05-11 09:16:15 +0100 0.34
 ==============================
 
