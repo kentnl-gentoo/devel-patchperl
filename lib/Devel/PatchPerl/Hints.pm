@@ -1,6 +1,6 @@
 package Devel::PatchPerl::Hints;
 BEGIN {
-  $Devel::PatchPerl::Hints::VERSION = '0.38';
+  $Devel::PatchPerl::Hints::VERSION = '0.40';
 }
 
 #ABSTRACT: replacement 'hints' files
@@ -675,6 +675,7 @@ my %files = (
   'netbsd'  => 'netbsd.sh',
   'openbsd' => 'openbsd.sh',
   'linux'   => 'linux.sh',
+  'dragonfly' => 'dragonfly.sh',
 );
 
 sub hint_file {
@@ -699,7 +700,7 @@ Devel::PatchPerl::Hints - replacement 'hints' files
 
 =head1 VERSION
 
-version 0.38
+version 0.40
 
 =head1 SYNOPSIS
 
