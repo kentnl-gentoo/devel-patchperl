@@ -1,4 +1,30 @@
 ==============================
+2011-06-08 16:42:11 +0100 0.38
+==============================
+
+  commit 43ff4180e665641a992f3285db183cc6d4e25b8a
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Jun 8 16:42:11 2011 +0100
+  
+    Bump version
+
+  commit 974bf68f582324d4924e57618da8e26ef5595bec
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Jun 8 14:51:23 2011 +0100
+  
+    Added hints file for Dragonfly BSD to enable building with threads on
+    < v5,12.0
+
+  commit 6ee234e39ed09a44238d7951f164250b7ca9168b
+  Author: Randy Stauner <randy@magnificent-tears.com>
+  Date:   Mon May 16 20:23:04 2011 -0700
+  
+    Update documentation to reflect recent file mode change
+
+    Since code recently changed from using 0755 to 0644 update the
+    Synopsis Pod accordingly. 
+
+==============================
 2011-05-14 10:07:23 +0100 0.36
 ==============================
 
