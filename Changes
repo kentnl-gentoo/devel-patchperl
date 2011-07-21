@@ -1,4 +1,20 @@
 ==============================
+2011-07-21 10:24:51 +0100 0.42
+==============================
+
+  commit 4332ae76132eac3a9b17051e9982fe7692c427dd
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Jul 21 10:24:51 2011 +0100
+  
+    Bump version to 0.42
+
+  commit 72d63c4a85a098cf1c8a5c74830a1c79bb8bcd05
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Jul 21 10:23:18 2011 +0100
+  
+    Added hints file for 'darwin' for fixes > Snow Leopard and XCode 4 
+
+==============================
 2011-06-08 17:14:21 +0100 0.40
 ==============================
 
