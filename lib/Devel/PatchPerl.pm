@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 BEGIN {
-  $Devel::PatchPerl::VERSION = '0.42';
+  $Devel::PatchPerl::VERSION = '0.44';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPort's buildperl.pl
@@ -147,7 +147,6 @@ sub patch_source {
     }
   }
   $source = File::Spec->rel2abs($source);
-  warn "No patch utility found\n" unless $patch_exe;
   {
     my $dir = pushd( $source );
     for my $p ( grep { _is( $_->{perl}, $vers ) } @patch ) {
@@ -185,6 +184,7 @@ sub _patch
   print "patching $_\n" for $patch =~ /^\+{3}\s+(\S+)/gm;
   my $diff = 'tmp.diff';
   _write_or_die($diff, $patch);
+  die "No patch utility found\n" unless $patch_exe;
   _run_or_die("$patch_exe -f -s -p0 <$diff");
   unlink $diff or die "unlink $diff: $!\n";
 }
@@ -1722,7 +1722,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPort's buildperl.pl
 
 =head1 VERSION
 
-version 0.42
+version 0.44
 
 =head1 SYNOPSIS
 

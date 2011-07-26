@@ -1,4 +1,21 @@
 ==============================
+2011-07-26 11:39:36 +0100 0.44
+==============================
+
+  commit 12852760bd4d00c2075879ef28bd3f95599740d6
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Jul 26 11:39:36 2011 +0100
+  
+    Bump to version 0.44
+
+  commit 2e271b6610c913a77cb67070a8886c478eed3e44
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Jul 26 11:06:45 2011 +0100
+  
+    Actually die if no 'patch' is available, but delay check until when
+    we need it 
+
+==============================
 2011-07-21 10:24:51 +0100 0.42
 ==============================
 
