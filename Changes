@@ -1,4 +1,29 @@
 ==============================
+2011-08-05 17:58:57 +0100 0.46
+==============================
+
+  commit df87087608a0aa3dbc4fe825e8b20c80638eff50
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Fri Aug 5 17:58:57 2011 +0100
+  
+    Bump version 0.46
+
+  commit 497752b280233381866ce4b056e51a40cadafcd6
+  Author: David Golden <dagolden@cpan.org>
+  Date:   Sat Aug 6 00:31:58 2011 +0800
+  
+    Fixes linux.sh hints file for Ubuntu multi-arch
+
+    This updates to the latest linux.sh hints file, which is necessary to
+    build older Perls on recent Ubuntu machines.
+
+  commit e381b5d67c685cd835a25927cf6af13484b90ee7
+  Author: Uwe Voelker <uwe.voelker@xing.com>
+  Date:   Fri Aug 5 16:12:27 2011 +0200
+  
+    fix typo 
+
+==============================
 2011-07-26 11:39:36 +0100 0.44
 ==============================
 

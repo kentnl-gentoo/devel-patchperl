@@ -1,5 +1,5 @@
 ---
-abstract: "Patch perl source a la Devel::PPort's buildperl.pl"
+abstract: "Patch perl source a la Devel::PPPort's buildperl.pl"
 author:
   - 'Chris Williams <chris@bingosnet.co.uk>'
 build_requires: {}
@@ -21,4 +21,4 @@ requires:
 resources:
   homepage: https://github.com/bingos/devel-patchperl
   repository: https://github.com/bingos/devel-patchperl
-version: 0.44
+version: 0.46

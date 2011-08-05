@@ -1,9 +1,9 @@
 package Devel::PatchPerl;
 BEGIN {
-  $Devel::PatchPerl::VERSION = '0.44';
+  $Devel::PatchPerl::VERSION = '0.46';
 }
 
-# ABSTRACT: Patch perl source a la Devel::PPort's buildperl.pl
+# ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
 
 use strict;
 use warnings;
@@ -1718,11 +1718,11 @@ __END__
 
 =head1 NAME
 
-Devel::PatchPerl - Patch perl source a la Devel::PPort's buildperl.pl
+Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 0.44
+version 0.46
 
 =head1 SYNOPSIS
 
@@ -1735,7 +1735,7 @@ version 0.44
 
 =head1 DESCRIPTION
 
-Devel::PatchPerl is a modularisation of the patching code contained in L<Devel::PPort>'s
+Devel::PatchPerl is a modularisation of the patching code contained in L<Devel::PPPort>'s
 C<buildperl.pl>.
 
 It does not build perls, it merely provides an interface to the source patching

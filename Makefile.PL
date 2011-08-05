@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Patch perl source a la Devel::PPort\'s buildperl.pl',
+  'ABSTRACT' => 'Patch perl source a la Devel::PPPort\'s buildperl.pl',
   'AUTHOR' => 'Chris Williams <chris@bingosnet.co.uk>',
   'BUILD_REQUIRES' => {},
   'CONFIGURE_REQUIRES' => {
@@ -27,7 +27,7 @@ my %WriteMakefileArgs = (
     'IPC::Cmd' => '0.40',
     'MIME::Base64' => '0'
   },
-  'VERSION' => '0.44',
+  'VERSION' => '0.46',
   'test' => {
     'TESTS' => 't/*.t'
   }

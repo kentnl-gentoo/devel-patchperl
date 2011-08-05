@@ -1,5 +1,5 @@
 {
-   "abstract" : "Patch perl source a la Devel::PPort's buildperl.pl",
+   "abstract" : "Patch perl source a la Devel::PPPort's buildperl.pl",
    "author" : [
       "Chris Williams <chris@bingosnet.co.uk>"
    ],
@@ -38,6 +38,6 @@
          "web" : "https://github.com/bingos/devel-patchperl"
       }
    },
-   "version" : "0.44"
+   "version" : "0.46"
 }
 
