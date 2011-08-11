@@ -1,4 +1,52 @@
 ==============================
+2011-08-11 18:10:01 +0100 0.48
+==============================
+
+  commit e947810c9c6d42e0fc3bcf80f6488a6158054594
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Aug 11 18:05:42 2011 +0100
+  
+    Add HPUX hints file
+
+    commit 9cfd094e6d0a842551c1c58e998eb057cd8425e3
+
+    Author: H.Merijn Brand <h.m.brand@xs4all.nl>
+
+    Date: Thu Aug 4 09:20:32 2011 +0200
+
+    Support gcc-4.x on HP-UX PA-RISC/64
+
+    Correct the socketsize. Probably due to big-endian versus
+
+    little-endian, this has always worked on Intel CPUs. This
+
+    is a very very old problem, and it has been the reason I
+
+    never used gcc-4 on PA-RISC, because perl would not pass
+
+    the test suite in 64bitall.
+
+    Noticeable effects of wrong "$socksizetype" are return codes
+
+    of 0 (pass) from functions like getpeername (), but invalid
+
+    (or none) data in the returned structures or a return length
+
+    of 0 or 256. In the latter case, the length is stored in the
+
+    second part of the 64bit long and the 32bit first part is 0.
+
+    This might be true on Intel-like machines too, but the tests
+
+    will pass, as the significant part of the returned length is
+
+    in the first 32bits and a pointer to int will still see that
+
+    correct. Mind that in that case the 32bits after that might
+
+    have been overridden => can of worms. 
+
+==============================
 2011-08-05 17:58:57 +0100 0.46
 ==============================
 
