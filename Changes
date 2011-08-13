@@ -1,4 +1,20 @@
 ==============================
+2011-08-13 21:52:41 +0100 0.52
+==============================
+
+  commit 77839624a774415a076c417c3defff8e0df340e3
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sat Aug 13 21:52:41 2011 +0100
+  
+    Bumpity version to 0.52
+
+  commit eccf7d47787622467238fb3682e903f8f66f1874
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sat Aug 13 21:22:58 2011 +0100
+  
+    Correctly determine Perl source version even old stuff. 
+
+==============================
 2011-08-13 14:01:15 +0100 0.50
 ==============================
 
