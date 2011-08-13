@@ -8,7 +8,7 @@ use strict;
 use warnings;
 use Devel::PatchPerl;
 
-Devel::PatchPerl->patch_source(undef, $ARGV[0]);
+Devel::PatchPerl->patch_source($ARGV[1], $ARGV[0]);
 
 __END__
 =pod
@@ -19,7 +19,7 @@ patchperl - patch a perl source tree
 
 =head1 VERSION
 
-version 0.48
+version 0.50
 
 =head1 AUTHOR
 

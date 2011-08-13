@@ -1,4 +1,20 @@
 ==============================
+2011-08-13 14:01:15 +0100 0.50
+==============================
+
+  commit 4e0cc3baaa12e396d38c765578f5c4d131c8762a
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sat Aug 13 14:01:15 2011 +0100
+  
+    Bump to version 0.50
+
+  commit 9051a36d11eebc6e3ee4301ea7f64711943e4450
+  Author: John Peacock <jpeacock@cpan.org>
+  Date:   Sat Aug 13 20:42:01 2011 +0800
+  
+    Specify Perl version for perlbrew & perl5.005 
+
+==============================
 2011-08-11 18:10:01 +0100 0.48
 ==============================
 
