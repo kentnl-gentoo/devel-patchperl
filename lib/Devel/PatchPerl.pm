@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 {
-  $Devel::PatchPerl::VERSION = '0.56';
+  $Devel::PatchPerl::VERSION = '0.58';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
@@ -133,7 +133,7 @@ my @patch = (
   },
   {
     perl => [
-              qr/(?^:5.1(?:[24].\d+|0.1))/,
+              qr/^5.1([24].\d+|0.1)/,
             ],
     subs => [
               [ \&_patch_make_ext_pl ],
@@ -1756,7 +1756,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 0.56
+version 0.58
 
 =head1 SYNOPSIS
 

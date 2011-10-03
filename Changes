@@ -1,4 +1,15 @@
 ==============================
+2011-10-03 21:24:45 +0100 0.58
+==============================
+
+  commit 2057805e5129dcde0a88ae81f5936547ad5a3484
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon Oct 3 21:24:45 2011 +0100
+  
+    Fix v5.14-ism in regex. Reported by Gregor Herrmann [rt.cpan.org
+    #71416] 
+
+==============================
 2011-10-03 13:40:19 +0100 0.56
 ==============================
 
