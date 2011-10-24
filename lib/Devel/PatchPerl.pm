@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 {
-  $Devel::PatchPerl::VERSION = '0.58';
+  $Devel::PatchPerl::VERSION = '0.60';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
@@ -225,7 +225,7 @@ sub _determine_version {
       my ($foo,$bar) = ( split /\s+/ )[1,2];
       $defines{$foo} = $bar;
     }
-    if ( my @wotsits = grep { defined $defines{$_} } qw(PERL_REVISION PERL_VERSION PERL_API_SUBVERSION) ) {
+    if ( my @wotsits = grep { defined $defines{$_} } qw(PERL_REVISION PERL_VERSION PERL_SUBVERSION) ) {
       $version = join '.', map { $defines{$_} } @wotsits;
     }
     else {
@@ -1756,7 +1756,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 0.58
+version 0.60
 
 =head1 SYNOPSIS
 

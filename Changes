@@ -1,4 +1,16 @@
 ==============================
+2011-10-24 15:21:34 +0100 0.60
+==============================
+
+  commit b737b8521ffd34bf91438add2ff0073d9e01b65a
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon Oct 24 15:21:34 2011 +0100
+  
+    Autoguessing perl versions was broken, it is fixed now.
+
+    Thanks to Tom Molesworth and Paul Evans for helping to spot this. 
+
+==============================
 2011-10-03 21:24:45 +0100 0.58
 ==============================
 
