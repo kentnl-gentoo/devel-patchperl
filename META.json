@@ -4,7 +4,7 @@
       "Chris Williams <chris@bingosnet.co.uk>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300003, CPAN::Meta::Converter version 2.112621",
+   "generated_by" : "Dist::Zilla version 4.300007, CPAN::Meta::Converter version 2.120351",
    "license" : [
       "perl_5"
    ],
@@ -22,9 +22,10 @@
       "runtime" : {
          "requires" : {
             "File::pushd" : "1.00",
-            "IO::File" : 0,
+            "IO::File" : "0",
             "IPC::Cmd" : "0.40",
-            "MIME::Base64" : 0,
+            "MIME::Base64" : "0",
+            "Module::Pluggable" : "0",
             "perl" : "v5.6.0"
          }
       }
@@ -38,6 +39,6 @@
          "web" : "https://github.com/bingos/devel-patchperl"
       }
    },
-   "version" : "0.62"
+   "version" : "0.64"
 }
 
