@@ -1,4 +1,14 @@
 ==============================
+2012-04-03 10:06:44 +0100 0.68
+==============================
+
+  commit e261b60280ae83ce7a643f5ebf1e33628e3e5660
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Apr 3 10:06:44 2012 +0100
+  
+    Updated hints files, includes support for NetBSD 6.* 
+
+==============================
 2012-02-08 13:01:27 +0000 0.66
 ==============================
 
