@@ -1,4 +1,15 @@
 ==============================
+2012-05-15 08:37:48 +0100 0.70
+==============================
+
+  commit 1e16483dc23a38624187dd4b1c65a6dff2914fad
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue May 15 08:37:48 2012 +0100
+  
+    Updated Linux hints which includes gcc search libraries localisation
+    fix 
+
+==============================
 2012-04-03 10:06:44 +0100 0.68
 ==============================
 
