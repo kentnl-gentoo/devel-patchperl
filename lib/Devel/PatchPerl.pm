@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 {
-  $Devel::PatchPerl::VERSION = '0.70';
+  $Devel::PatchPerl::VERSION = '0.72';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
@@ -1789,7 +1789,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 0.70
+version 0.72
 
 =head1 SYNOPSIS
 
@@ -1828,6 +1828,12 @@ current working directory.
 =head1 PLUGIN SYSTEM
 
 See L<Devel::PatchPerl::Plugin> for details of Devel::PatchPerl's plugin system.
+
+=head1 CAVEAT
+
+Devel::PatchPerl is intended only to facilitate the C<building> of perls, not to
+facilitate the C<testing> of perls. This means that it will not patch failing tests
+in the perl testsuite.
 
 =head1 SEE ALSO
 

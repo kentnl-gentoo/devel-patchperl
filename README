@@ -2,7 +2,7 @@ NAME
     Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 VERSION
-    version 0.70
+    version 0.72
 
 SYNOPSIS
       use strict;
@@ -33,6 +33,11 @@ FUNCTION
 PLUGIN SYSTEM
     See Devel::PatchPerl::Plugin for details of Devel::PatchPerl's plugin
     system.
+
+CAVEAT
+    Devel::PatchPerl is intended only to facilitate the "building" of perls,
+    not to facilitate the "testing" of perls. This means that it will not
+    patch failing tests in the perl testsuite.
 
 SEE ALSO
     Devel::PPPort

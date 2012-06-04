@@ -1,6 +1,6 @@
 package Devel::PatchPerl::Plugin;
 {
-  $Devel::PatchPerl::Plugin::VERSION = '0.70';
+  $Devel::PatchPerl::Plugin::VERSION = '0.72';
 }
 
 #ABSTRACT: Devel::PatchPerl plugins explained
@@ -20,7 +20,7 @@ Devel::PatchPerl::Plugin - Devel::PatchPerl plugins explained
 
 =head1 VERSION
 
-version 0.70
+version 0.72
 
 =head1 DESCRIPTION
 

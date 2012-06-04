@@ -1,4 +1,14 @@
 ==============================
+2012-06-05 00:44:17 +0100 0.72
+==============================
+
+  commit fcfe67838eea00f8108f80ce0cecacd014df6407
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Jun 5 00:44:17 2012 +0100
+  
+    Clarify in the POD, we only facilitate building not testing 
+
+==============================
 2012-05-15 08:37:48 +0100 0.70
 ==============================
 
