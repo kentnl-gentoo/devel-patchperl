@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 {
-  $Devel::PatchPerl::VERSION = '0.72';
+  $Devel::PatchPerl::VERSION = '0.74';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
@@ -139,6 +139,10 @@ my @patch = (
     subs => [
               [ \&_patch_make_ext_pl ],
             ],
+  },
+  {
+    perl => [ qr/^5\.8\.9$/, ],
+    subs => [ [ \&_patch_589_perlio_c ], ],
   },
 );
 
@@ -1776,6 +1780,27 @@ sub _patch_make_ext_pl
 END
 }
 
+sub _patch_589_perlio_c
+{
+  _patch(<<'END');
+--- a/perlio.c
++++ b/perlio.c
+@@ -2323,6 +2323,12 @@ PerlIO_init(pTHX)
+ {
+     /* MUTEX_INIT(&PL_perlio_mutex) is done in PERL_SYS_INIT3(). */
+     PERL_UNUSED_CONTEXT;
++    /*
++     * No, for backwards compatibility (before PERL_SYS_INIT3 changed to be
++     * defined as a separate function call), we need to call
++     * MUTEX_INIT(&PL_perlio_mutex) (via the PERLIO_INIT macro).
++     */
++    PERLIO_INIT;
+ }
+ 
+ void
+END
+}
+
 qq[patchin'];
 
 
@@ -1789,7 +1814,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 0.72
+version 0.74
 
 =head1 SYNOPSIS
 

@@ -1,4 +1,21 @@
 ==============================
+2012-07-24 19:32:11 +0100 0.74
+==============================
+
+  commit b2b8a945b03d573501700db99ae6f2b32c2cabfc
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Jul 24 19:32:11 2012 +0100
+  
+    Add v5.8.9 patch
+
+    [perl #63886] 5.8.9 binary incompatibility with PL_perlio_mutex
+
+    Applied as:
+
+    commit 03fe696d61d94bd59d878a9f81b0af85465d7e1e Author: From: Edward
+    Moy <emoy@apple.com> Date: Sun Jul 8 23:01:23 2012 -0700 
+
+==============================
 2012-06-05 00:44:17 +0100 0.72
 ==============================
 
