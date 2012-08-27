@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 {
-  $Devel::PatchPerl::VERSION = '0.74';
+  $Devel::PatchPerl::VERSION = '0.76';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
@@ -1783,8 +1783,8 @@ END
 sub _patch_589_perlio_c
 {
   _patch(<<'END');
---- a/perlio.c
-+++ b/perlio.c
+--- perlio.c
++++ perlio.c
 @@ -2323,6 +2323,12 @@ PerlIO_init(pTHX)
  {
      /* MUTEX_INIT(&PL_perlio_mutex) is done in PERL_SYS_INIT3(). */
@@ -1814,7 +1814,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 0.74
+version 0.76
 
 =head1 SYNOPSIS
 

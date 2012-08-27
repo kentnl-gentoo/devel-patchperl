@@ -4,7 +4,7 @@
       "Chris Williams <chris@bingosnet.co.uk>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300020, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300021, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -39,6 +39,6 @@
          "web" : "https://github.com/bingos/devel-patchperl"
       }
    },
-   "version" : "0.74"
+   "version" : "0.76"
 }
 
