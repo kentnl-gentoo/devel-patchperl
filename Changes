@@ -1,25 +1,39 @@
-==============================
-2012-08-28 00:29:08 +0100 0.76
-==============================
+==================================================
+Changes from 2008-02-19 00:00:00 +0000 to present.
+==================================================
 
-  commit 9f71defdd149f82f3a243dfd025802dcf0e34c2a
+-----------------------------------------
+version 0.78 at 2013-02-17 16:58:31 +0000
+-----------------------------------------
+
+  Change: 0c2be36694492d5824f7704cf9d3473c28228d99
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-02-17 16:58:31 +0000
+
+    Added midnightbsd hints file which supports 0.4 
+
+-----------------------------------------
+version 0.76 at 2012-08-27 23:29:08 +0000
+-----------------------------------------
+
+  Change: 9f71defdd149f82f3a243dfd025802dcf0e34c2a
   Author: Ruslan Zakirov <ruz@bestpractical.com>
-  Date:   Tue Aug 28 00:29:08 2012 +0100
-  
+  Date : 2012-08-28 00:29:08 +0000
+
     [rt.cpan.org #79223] bad patch for 5.8.9 in 0.74
 
     Patch for perlio.c is for patch -p1 while module runs -p0.
 
     Signed-off-by: Chris 'BinGOs' Williams <chris@bingosnet.co.uk> 
 
-==============================
-2012-07-24 19:32:11 +0100 0.74
-==============================
+-----------------------------------------
+version 0.74 at 2012-07-24 18:32:11 +0000
+-----------------------------------------
 
-  commit b2b8a945b03d573501700db99ae6f2b32c2cabfc
+  Change: b2b8a945b03d573501700db99ae6f2b32c2cabfc
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Tue Jul 24 19:32:11 2012 +0100
-  
+  Date : 2012-07-24 19:32:11 +0000
+
     Add v5.8.9 patch
 
     [perl #63886] 5.8.9 binary incompatibility with PL_perlio_mutex
@@ -29,150 +43,150 @@
     commit 03fe696d61d94bd59d878a9f81b0af85465d7e1e Author: From: Edward
     Moy <emoy@apple.com> Date: Sun Jul 8 23:01:23 2012 -0700 
 
-==============================
-2012-06-05 00:44:17 +0100 0.72
-==============================
+-----------------------------------------
+version 0.72 at 2012-06-04 23:44:17 +0000
+-----------------------------------------
 
-  commit fcfe67838eea00f8108f80ce0cecacd014df6407
+  Change: fcfe67838eea00f8108f80ce0cecacd014df6407
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Tue Jun 5 00:44:17 2012 +0100
-  
+  Date : 2012-06-05 00:44:17 +0000
+
     Clarify in the POD, we only facilitate building not testing 
 
-==============================
-2012-05-15 08:37:48 +0100 0.70
-==============================
+-----------------------------------------
+version 0.70 at 2012-05-15 07:37:48 +0000
+-----------------------------------------
 
-  commit 1e16483dc23a38624187dd4b1c65a6dff2914fad
+  Change: 1e16483dc23a38624187dd4b1c65a6dff2914fad
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Tue May 15 08:37:48 2012 +0100
-  
+  Date : 2012-05-15 08:37:48 +0000
+
     Updated Linux hints which includes gcc search libraries localisation
     fix 
 
-==============================
-2012-04-03 10:06:44 +0100 0.68
-==============================
+-----------------------------------------
+version 0.68 at 2012-04-03 09:06:44 +0000
+-----------------------------------------
 
-  commit e261b60280ae83ce7a643f5ebf1e33628e3e5660
+  Change: e261b60280ae83ce7a643f5ebf1e33628e3e5660
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Tue Apr 3 10:06:44 2012 +0100
-  
+  Date : 2012-04-03 10:06:44 +0000
+
     Updated hints files, includes support for NetBSD 6.* 
 
-==============================
-2012-02-08 13:01:27 +0000 0.66
-==============================
+-----------------------------------------
+version 0.66 at 2012-02-08 13:01:27 +0000
+-----------------------------------------
 
-  commit 61579d54b0273fbfcb1ac39175ff641434a87103
+  Change: 61579d54b0273fbfcb1ac39175ff641434a87103
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Wed Feb 8 13:01:27 2012 +0000
-  
+  Date : 2012-02-08 13:01:27 +0000
+
     Added cygwin hints file 
 
-==============================
-2012-02-04 14:40:40 +0000 0.64
-==============================
+-----------------------------------------
+version 0.64 at 2012-02-04 14:40:40 +0000
+-----------------------------------------
 
-  commit 31651f154271f81ce4b239366fa383e65c5b9355
+  Change: 31651f154271f81ce4b239366fa383e65c5b9355
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Sat Feb 4 14:37:53 2012 +0000
-  
+  Date : 2012-02-04 14:40:40 +0000
+
     Added a plugin system 
 
-==============================
-2011-11-05 23:14:37 +0000 0.62
-==============================
+-----------------------------------------
+version 0.62 at 2011-11-05 23:14:37 +0000
+-----------------------------------------
 
-  commit 3cb8b66ade12cf01ab420a29f5f65797786f0df0
+  Change: 3cb8b66ade12cf01ab420a29f5f65797786f0df0
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Sat Nov 5 23:14:37 2011 +0000
-  
+  Date : 2011-11-05 23:14:37 +0000
+
     Update FreeBSD hints to support FreeBSD 10.0 
 
-==============================
-2011-10-24 15:21:34 +0100 0.60
-==============================
+-----------------------------------------
+version 0.60 at 2011-10-24 14:21:34 +0000
+-----------------------------------------
 
-  commit b737b8521ffd34bf91438add2ff0073d9e01b65a
+  Change: b737b8521ffd34bf91438add2ff0073d9e01b65a
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Mon Oct 24 15:21:34 2011 +0100
-  
+  Date : 2011-10-24 15:21:34 +0000
+
     Autoguessing perl versions was broken, it is fixed now.
 
     Thanks to Tom Molesworth and Paul Evans for helping to spot this. 
 
-==============================
-2011-10-03 21:24:45 +0100 0.58
-==============================
+-----------------------------------------
+version 0.58 at 2011-10-03 20:24:45 +0000
+-----------------------------------------
 
-  commit 2057805e5129dcde0a88ae81f5936547ad5a3484
+  Change: 2057805e5129dcde0a88ae81f5936547ad5a3484
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Mon Oct 3 21:24:45 2011 +0100
-  
+  Date : 2011-10-03 21:24:45 +0000
+
     Fix v5.14-ism in regex. Reported by Gregor Herrmann [rt.cpan.org
     #71416] 
 
-==============================
-2011-10-03 13:40:19 +0100 0.56
-==============================
+-----------------------------------------
+version 0.56 at 2011-10-03 12:40:19 +0000
+-----------------------------------------
 
-  commit e698b95b579df68d5bf7fef933269019fecf2e2c
+  Change: e698b95b579df68d5bf7fef933269019fecf2e2c
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Mon Oct 3 13:40:19 2011 +0100
-  
+  Date : 2011-10-03 13:40:19 +0000
+
     Fix previous update 
 
-==============================
-2011-10-03 13:02:08 +0100 0.54
-==============================
+-----------------------------------------
+version 0.54 at 2011-10-03 12:02:08 +0000
+-----------------------------------------
 
-  commit 6f7b6eafb637fcf30c7e8a21c9e3a4c2908f266c
+  Change: 6f7b6eafb637fcf30c7e8a21c9e3a4c2908f266c
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Mon Oct 3 13:02:08 2011 +0100
-  
+  Date : 2011-10-03 13:02:08 +0000
+
     Add patching of make_ext.pl for virtualisation fixes 
 
-==============================
-2011-08-13 21:52:41 +0100 0.52
-==============================
+-----------------------------------------
+version 0.52 at 2011-08-13 20:52:41 +0000
+-----------------------------------------
 
-  commit 77839624a774415a076c417c3defff8e0df340e3
+  Change: 77839624a774415a076c417c3defff8e0df340e3
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Sat Aug 13 21:52:41 2011 +0100
-  
-    Bumpity version to 0.52
+  Date : 2011-08-13 21:52:41 +0000
 
-  commit eccf7d47787622467238fb3682e903f8f66f1874
+    Bumpity version to 0.52 
+
+  Change: eccf7d47787622467238fb3682e903f8f66f1874
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Sat Aug 13 21:22:58 2011 +0100
-  
+  Date : 2011-08-13 21:50:22 +0000
+
     Correctly determine Perl source version even old stuff. 
 
-==============================
-2011-08-13 14:01:15 +0100 0.50
-==============================
+-----------------------------------------
+version 0.50 at 2011-08-13 13:01:15 +0000
+-----------------------------------------
 
-  commit 4e0cc3baaa12e396d38c765578f5c4d131c8762a
+  Change: 4e0cc3baaa12e396d38c765578f5c4d131c8762a
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Sat Aug 13 14:01:15 2011 +0100
-  
-    Bump to version 0.50
+  Date : 2011-08-13 14:01:15 +0000
 
-  commit 9051a36d11eebc6e3ee4301ea7f64711943e4450
+    Bump to version 0.50 
+
+  Change: 9051a36d11eebc6e3ee4301ea7f64711943e4450
   Author: John Peacock <jpeacock@cpan.org>
-  Date:   Sat Aug 13 20:42:01 2011 +0800
-  
+  Date : 2011-08-13 20:58:20 +0000
+
     Specify Perl version for perlbrew & perl5.005 
 
-==============================
-2011-08-11 18:10:01 +0100 0.48
-==============================
+-----------------------------------------
+version 0.48 at 2011-08-11 17:10:01 +0000
+-----------------------------------------
 
-  commit e947810c9c6d42e0fc3bcf80f6488a6158054594
+  Change: e947810c9c6d42e0fc3bcf80f6488a6158054594
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Thu Aug 11 18:05:42 2011 +0100
-  
+  Date : 2011-08-11 18:10:01 +0000
+
     Add HPUX hints file
 
     commit 9cfd094e6d0a842551c1c58e998eb057cd8425e3
@@ -213,108 +227,124 @@
 
     have been overridden => can of worms. 
 
-==============================
-2011-08-05 17:58:57 +0100 0.46
-==============================
+-----------------------------------------
+version 0.46 at 2011-08-05 16:58:57 +0000
+-----------------------------------------
 
-  commit df87087608a0aa3dbc4fe825e8b20c80638eff50
+  Change: df87087608a0aa3dbc4fe825e8b20c80638eff50
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Fri Aug 5 17:58:57 2011 +0100
-  
-    Bump version 0.46
+  Date : 2011-08-05 17:58:57 +0000
 
-  commit 497752b280233381866ce4b056e51a40cadafcd6
+    Bump version 0.46 
+
+  Change: 497752b280233381866ce4b056e51a40cadafcd6
   Author: David Golden <dagolden@cpan.org>
-  Date:   Sat Aug 6 00:31:58 2011 +0800
-  
+  Date : 2011-08-06 00:53:51 +0000
+
     Fixes linux.sh hints file for Ubuntu multi-arch
 
     This updates to the latest linux.sh hints file, which is necessary to
-    build older Perls on recent Ubuntu machines.
+    build older Perls on recent Ubuntu machines. 
 
-  commit e381b5d67c685cd835a25927cf6af13484b90ee7
+  Change: 24a8cdc2c70a2ecea2573c3152e75be1824657ce
+  Author: Ævar Arnfjörð Bjarmason <avarab@gmail.com>
+  Date : 2011-08-05 07:23:51 +0000
+
+    Merge pull request #6 from uwe/master
+
+    fix typo Devel::(P)PPort 
+
+  Change: e381b5d67c685cd835a25927cf6af13484b90ee7
   Author: Uwe Voelker <uwe.voelker@xing.com>
-  Date:   Fri Aug 5 16:12:27 2011 +0200
-  
+  Date : 2011-08-05 16:12:27 +0000
+
     fix typo 
 
-==============================
-2011-07-26 11:39:36 +0100 0.44
-==============================
+-----------------------------------------
+version 0.44 at 2011-07-26 10:39:36 +0000
+-----------------------------------------
 
-  commit 12852760bd4d00c2075879ef28bd3f95599740d6
+  Change: 12852760bd4d00c2075879ef28bd3f95599740d6
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Tue Jul 26 11:39:36 2011 +0100
-  
-    Bump to version 0.44
+  Date : 2011-07-26 11:39:36 +0000
 
-  commit 2e271b6610c913a77cb67070a8886c478eed3e44
+    Bump to version 0.44 
+
+  Change: 2e271b6610c913a77cb67070a8886c478eed3e44
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Tue Jul 26 11:06:45 2011 +0100
-  
+  Date : 2011-07-26 11:06:45 +0000
+
     Actually die if no 'patch' is available, but delay check until when
     we need it 
 
-==============================
-2011-07-21 10:24:51 +0100 0.42
-==============================
+-----------------------------------------
+version 0.42 at 2011-07-21 09:24:51 +0000
+-----------------------------------------
 
-  commit 4332ae76132eac3a9b17051e9982fe7692c427dd
+  Change: 4332ae76132eac3a9b17051e9982fe7692c427dd
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Thu Jul 21 10:24:51 2011 +0100
-  
-    Bump version to 0.42
+  Date : 2011-07-21 10:24:51 +0000
 
-  commit 72d63c4a85a098cf1c8a5c74830a1c79bb8bcd05
+    Bump version to 0.42 
+
+  Change: 72d63c4a85a098cf1c8a5c74830a1c79bb8bcd05
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Thu Jul 21 10:23:18 2011 +0100
-  
+  Date : 2011-07-21 10:23:18 +0000
+
     Added hints file for 'darwin' for fixes > Snow Leopard and XCode 4 
 
-==============================
-2011-06-08 17:14:21 +0100 0.40
-==============================
+-----------------------------------------
+version 0.40 at 2011-06-08 16:14:21 +0000
+-----------------------------------------
 
-  commit 76f8b301b462352bfcf56f2d25fb3254b4170864
+  Change: 76f8b301b462352bfcf56f2d25fb3254b4170864
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Wed Jun 8 17:14:21 2011 +0100
-  
+  Date : 2011-06-08 17:14:21 +0000
+
     Fix the missing file declaration for dragonfly BSD 
 
-==============================
-2011-06-08 16:42:11 +0100 0.38
-==============================
+-----------------------------------------
+version 0.38 at 2011-06-08 15:42:11 +0000
+-----------------------------------------
 
-  commit 43ff4180e665641a992f3285db183cc6d4e25b8a
+  Change: 43ff4180e665641a992f3285db183cc6d4e25b8a
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Wed Jun 8 16:42:11 2011 +0100
-  
-    Bump version
+  Date : 2011-06-08 16:42:11 +0000
 
-  commit 974bf68f582324d4924e57618da8e26ef5595bec
+    Bump version 
+
+  Change: 974bf68f582324d4924e57618da8e26ef5595bec
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Wed Jun 8 14:51:23 2011 +0100
-  
+  Date : 2011-06-08 16:41:26 +0000
+
     Added hints file for Dragonfly BSD to enable building with threads on
-    < v5,12.0
+    < v5,12.0 
 
-  commit 6ee234e39ed09a44238d7951f164250b7ca9168b
+  Change: 9612cad336eaf329207185cdb55ed63b4fdb99eb
+  Author: Chris Williams <chris@bingosnet.co.uk>
+  Date : 2011-05-18 04:21:32 +0000
+
+    Merge pull request #4 from magnificent-tears/patch-1
+
+    Update documentation to reflect recent file mode change 
+
+  Change: 6ee234e39ed09a44238d7951f164250b7ca9168b
   Author: Randy Stauner <randy@magnificent-tears.com>
-  Date:   Mon May 16 20:23:04 2011 -0700
-  
+  Date : 2011-05-16 20:23:04 +0000
+
     Update documentation to reflect recent file mode change
 
     Since code recently changed from using 0755 to 0644 update the
     Synopsis Pod accordingly. 
 
-==============================
-2011-05-14 10:07:23 +0100 0.36
-==============================
+-----------------------------------------
+version 0.36 at 2011-05-14 09:07:23 +0000
+-----------------------------------------
 
-  commit 9adaa25602a33f3946c2e0108c4e433d91a7ebcf
+  Change: 9adaa25602a33f3946c2e0108c4e433d91a7ebcf
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Sat May 14 10:07:23 2011 +0100
-  
+  Date : 2011-05-14 10:07:23 +0000
+
     chmod of hints files was too aggressive, make it only set 644 instead
     of 755.
 
@@ -326,46 +356,54 @@
     Highlighted by Randy Stauner (magnificent-tears) as an issue on
     Github. 
 
-==============================
-2011-05-11 09:16:15 +0100 0.34
-==============================
+-----------------------------------------
+version 0.34 at 2011-05-11 08:16:15 +0000
+-----------------------------------------
 
-  commit d4a8f9c8314afd9f73d82e83165621c93faa2b2d
+  Change: d4a8f9c8314afd9f73d82e83165621c93faa2b2d
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Wed May 11 09:16:15 2011 +0100
-  
-    Bump version
+  Date : 2011-05-11 09:16:15 +0000
 
-  commit 3dcec38b38fae48166a914b6be18ad734a9f1c41
+    Bump version 
+
+  Change: 3dcec38b38fae48166a914b6be18ad734a9f1c41
   Author: punytan <punytan@gmail.com>
-  Date:   Wed May 11 13:32:42 2011 +0800
-  
+  Date : 2011-05-11 16:12:09 +0000
+
     Add a patch to work around Ubuntu lib paths
 
     This is the same patch as
     https://github.com/mirrors/perl/commit/8313e401231663db6f72d5c2936ef3
     8a4d2d399c 
 
-==============================
-2011-05-09 11:36:45 +0100 0.32
-==============================
+-----------------------------------------
+version 0.32 at 2011-05-09 10:36:45 +0000
+-----------------------------------------
 
-  commit 6a2f21fca1def7b08ddc5dbac83931a69a37fdb9
+  Change: 6a2f21fca1def7b08ddc5dbac83931a69a37fdb9
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Mon May 9 11:36:45 2011 +0100
-  
-    Bump version to 0.32
+  Date : 2011-05-09 11:36:45 +0000
 
-  commit 99571866b79b0b2c31b49794ca2e515faf78fc53
+    Bump version to 0.32 
+
+  Change: 99571866b79b0b2c31b49794ca2e515faf78fc53
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Mon May 9 11:35:23 2011 +0100
-  
-    Add another sub-test to the hints file test.
+  Date : 2011-05-09 11:35:23 +0000
 
-  commit 32e5c54feecc7406a576524d714eb7a128753328
+    Add another sub-test to the hints file test. 
+
+  Change: 36ffd70f3544ffe7923d784d092c7c6842c15bf9
+  Author: Ævar Arnfjörð Bjarmason <avarab@gmail.com>
+  Date : 2011-05-08 14:15:17 +0000
+
+    Merge pull request #1 from autarch/master
+
+    This gets pre 5.14.0 Perls compiling on Ubuntu 11.04 
+
+  Change: 32e5c54feecc7406a576524d714eb7a128753328
   Author: Dave Rolsky <autarch@urth.org>
-  Date:   Sun May 8 15:30:53 2011 -0500
-  
+  Date : 2011-05-08 15:30:53 +0000
+
     Add patches to work around an issue with older Archive-Tar version
     tests on ecryptfs
 
@@ -373,148 +411,148 @@
     https://rt.cpan.org/Ticket/Display.html?id=57312
 
     Newer versions of Ubuntu offer to encrypt your home dir as part of
-    the installation.
+    the installation. 
 
-  commit 7b5d94e3a2e26191a3e03a5198c07a780668c30a
+  Change: 7b5d94e3a2e26191a3e03a5198c07a780668c30a
   Author: Dave Rolsky <autarch@urth.org>
-  Date:   Sun May 8 14:23:36 2011 -0500
-  
+  Date : 2011-05-08 14:23:36 +0000
+
     Add the linux hints file from blead to accomodate Ubuntu 11.04 libs
     path change 
 
-==============================
-2011-03-21 22:05:51 +0000 0.30
-==============================
+-----------------------------------------
+version 0.30 at 2011-03-21 22:05:51 +0000
+-----------------------------------------
 
-  commit 336b84b63407d1cc6783d5bb6226d7ff2ffef043
+  Change: 336b84b63407d1cc6783d5bb6226d7ff2ffef043
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Mon Mar 21 22:05:51 2011 +0000
-  
-    Bump version to 0.30
+  Date : 2011-03-21 22:05:51 +0000
 
-  commit 59a7ba098124e7175baaa5b7e441b8a1276492fc
+    Bump version to 0.30 
+
+  Change: 59a7ba098124e7175baaa5b7e441b8a1276492fc
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Mon Mar 21 22:03:03 2011 +0000
-  
+  Date : 2011-03-21 22:03:03 +0000
+
     Add hints for openbsd, to resolve issues with malloc on OpenBSD >=
     3.7 
 
-==============================
-2011-03-19 07:51:23 +0000 0.28
-==============================
+-----------------------------------------
+version 0.28 at 2011-03-19 07:51:23 +0000
+-----------------------------------------
 
-  commit 21843164fcdc2d919e0ec3b773c300d45d57d93a
+  Change: 21843164fcdc2d919e0ec3b773c300d45d57d93a
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Sat Mar 19 07:51:23 2011 +0000
-  
+  Date : 2011-03-19 07:51:23 +0000
+
     Resolve a fatal regression in patch_hints that meant the actual hints
     file didn't get actually patched. Doh. 
 
-==============================
-2011-03-16 13:56:15 +0000 0.26
-==============================
+-----------------------------------------
+version 0.26 at 2011-03-16 13:56:15 +0000
+-----------------------------------------
 
-  commit 6207abb679ef79bf6f899ffc5f735e5b62a18e3f
+  Change: 6207abb679ef79bf6f899ffc5f735e5b62a18e3f
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Wed Mar 16 13:56:15 2011 +0000
-  
-    Bump version
+  Date : 2011-03-16 13:56:15 +0000
 
-  commit 0c7f4bcd0027a164c036b06dc3c4c8f4ff39a65c
-  Author: Florian Ragwitz <rafl@debian.org>
-  Date:   Wed Mar 16 14:33:56 2011 +0100
-  
-    Add a patchperl utility
+    Bump version 
 
-  commit 39a3ddb15c6637c2ee90640d528d2eda9a2d7fd9
+  Change: 0c7f4bcd0027a164c036b06dc3c4c8f4ff39a65c
   Author: Florian Ragwitz <rafl@debian.org>
-  Date:   Wed Mar 16 14:28:22 2011 +0100
-  
+  Date : 2011-03-16 14:41:43 +0000
+
+    Add a patchperl utility 
+
+  Change: 39a3ddb15c6637c2ee90640d528d2eda9a2d7fd9
+  Author: Florian Ragwitz <rafl@debian.org>
+  Date : 2011-03-16 14:31:52 +0000
+
     Allow version guessing on paths other than '.'
 
     Also rename _determine to the more descriptive _determine_version
     while we're at it. 
 
-==============================
-2011-03-16 13:12:29 +0000 0.24
-==============================
+-----------------------------------------
+version 0.24 at 2011-03-16 13:12:29 +0000
+-----------------------------------------
 
-  commit bef4dbc7a8de0d806fd036203b1bec5929d77e88
+  Change: bef4dbc7a8de0d806fd036203b1bec5929d77e88
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Wed Mar 16 13:12:29 2011 +0000
-  
-    Change PatchPerl to use Hints and bump version to 0.24
+  Date : 2011-03-16 13:12:29 +0000
 
-  commit 52d2af66e7f0518555d15703ede3d8c19571606b
-  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Wed Mar 16 10:47:43 2011 +0000
-  
-    Updated Hints implementation and added test for it
+    Change PatchPerl to use Hints and bump version to 0.24 
 
-  commit b3b041d95eccfb3d34227cd9e4e9e16877b328f4
+  Change: 52d2af66e7f0518555d15703ede3d8c19571606b
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Wed Mar 16 10:20:38 2011 +0000
-  
+  Date : 2011-03-16 10:47:43 +0000
+
+    Updated Hints implementation and added test for it 
+
+  Change: b3b041d95eccfb3d34227cd9e4e9e16877b328f4
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2011-03-16 10:20:38 +0000
+
     Added ::Hints module to handle patching hints files 
 
-==============================
-2011-03-16 00:28:05 +0000 0.22
-==============================
+-----------------------------------------
+version 0.22 at 2011-03-16 00:28:05 +0000
+-----------------------------------------
 
-  commit 0a2a948891e37251c060e740099d2ba1e52878ef
+  Change: 0a2a948891e37251c060e740099d2ba1e52878ef
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Wed Mar 16 00:28:05 2011 +0000
-  
+  Date : 2011-03-16 00:28:05 +0000
+
     Added patching of hints/freebsd.sh file for all perls. 
 
-==============================
-2010-12-16 08:17:26 +0000 0.20
-==============================
+-----------------------------------------
+version 0.20 at 2010-12-16 08:17:26 +0000
+-----------------------------------------
 
-  commit e303b71103a28335b4388b942840710b3538752d
+  Change: e303b71103a28335b4388b942840710b3538752d
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Thu Dec 16 08:17:26 2010 +0000
-  
+  Date : 2010-12-16 08:17:26 +0000
+
     Lower the IPC::Cmd version requirement as requested by Florian
-    Ragwitz
+    Ragwitz 
 
-  commit 6d5e64ee1617af5d8011a6f161c0d32e225c88e5
+  Change: 6d5e64ee1617af5d8011a6f161c0d32e225c88e5
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Wed Dec 8 09:34:27 2010 +0000
-  
+  Date : 2010-12-08 09:34:27 +0000
+
     Update dist.ini for new Dzil keywords 
 
-==============================
-2010-12-08 09:31:50 +0000 0.18
-==============================
+-----------------------------------------
+version 0.18 at 2010-12-08 09:31:50 +0000
+-----------------------------------------
 
-  commit aa5b538482b0613d4c63b3e4897da70e3b5bcc35
+  Change: aa5b538482b0613d4c63b3e4897da70e3b5bcc35
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Wed Dec 8 09:31:50 2010 +0000
-  
+  Date : 2010-12-08 09:31:50 +0000
+
     Update the hints/netbsd.sh patching for recent blead changes
 
     usemymalloc will no longer default to 'y' 
 
-==============================
-2010-09-01 13:38:55 +0100 0.16
-==============================
+-----------------------------------------
+version 0.16 at 2010-09-01 12:38:55 +0000
+-----------------------------------------
 
-  commit 0f7ede5cdc62fb751e77939aacf741823be9f1c5
+  Change: 0f7ede5cdc62fb751e77939aacf741823be9f1c5
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Wed Sep 1 13:38:55 2010 +0100
-  
+  Date : 2010-09-01 13:38:55 +0000
+
     Add the auto-determination of perl version from the current working
     directory 
 
-==============================
-2010-09-01 13:22:41 +0100 0.14
-==============================
+-----------------------------------------
+version 0.14 at 2010-09-01 12:22:41 +0000
+-----------------------------------------
 
-  commit 2e6b0543bf7180ff086a4d63a828ad41acc16ee1
+  Change: 2e6b0543bf7180ff086a4d63a828ad41acc16ee1
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Wed Sep 1 13:22:41 2010 +0100
-  
+  Date : 2010-09-01 13:22:41 +0000
+
     Patches added for makedepend.SH to fix various problems with 5.6.0 up
     to 5.8.8
 
@@ -522,57 +560,85 @@
 
     The typo in one of the sed replacement lines. 
 
-==============================
-2010-06-22 09:32:04 +0100 0.12
-==============================
+-----------------------------------------
+version 0.12 at 2010-06-22 08:32:04 +0000
+-----------------------------------------
 
-  commit 435296d955ec88a13b30663e9fa3c3a71ce466df
+  Change: 435296d955ec88a13b30663e9fa3c3a71ce466df
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Tue Jun 22 09:32:04 2010 +0100
-  
+  Date : 2010-06-22 09:32:04 +0000
+
     Added patching of hints/netbsd.sh file for all perls. 
 
-==============================
-2010-06-21 21:29:07 +0100 0.10
-==============================
+-----------------------------------------
+version 0.10 at 2010-06-21 20:29:07 +0000
+-----------------------------------------
 
-  commit 4029c7f726e27882ce6e94380c1dd8daaa8ca371
+  Change: 4029c7f726e27882ce6e94380c1dd8daaa8ca371
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Mon Jun 21 21:29:07 2010 +0100
-  
+  Date : 2010-06-21 21:29:07 +0000
+
     Switched to dzil and switched from File::chdir to File::pushd 
 
-==============================
-2010-05-18 22:18:47 +0100 0.08
-==============================
+-----------------------------------------
+version 0.08 at 2010-05-18 21:18:47 +0000
+-----------------------------------------
 
-  commit 8631ee6c74fc8b38f770621bc834619ba9caf975
+  Change: 8631ee6c74fc8b38f770621bc834619ba9caf975
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Tue May 18 22:18:47 2010 +0100
-  
+  Date : 2010-05-18 22:18:47 +0000
+
     Found a more elegant way to deal with our 'isa' problem 
 
-==============================
-2010-05-18 09:10:40 +0100 0.06
-==============================
+-----------------------------------------
+version 0.06 at 2010-05-18 08:10:40 +0000
+-----------------------------------------
 
-  commit 225c1ddde7fe4bdf568fba7784da4e4599444cf5
+  Change: 225c1ddde7fe4bdf568fba7784da4e4599444cf5
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Tue May 18 09:10:40 2010 +0100
-  
+  Date : 2010-05-18 09:10:40 +0000
+
     Fixed a few issues, tested patching against perl-5.6.1 source tree
     and it works now. 
 
-==============================
-2010-05-18 00:33:32 +0100 0.04
-==============================
+-----------------------------------------
+version 0.04 at 2010-05-17 23:33:32 +0000
+-----------------------------------------
 
-  commit 09dfd7daa6a1fe5bc172aad1ad1d57eb0af86227
+  Change: 09dfd7daa6a1fe5bc172aad1ad1d57eb0af86227
   Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date:   Tue May 18 00:33:32 2010 +0100
-  
+  Date : 2010-05-18 00:33:32 +0000
+
     Fixed a bug calling patch_source as a exported function 
 
-====================================
-End of changes in the last 1825 days
-====================================
+-----------------------------------------
+version 0.02 at 2010-05-17 21:30:11 +0000
+-----------------------------------------
+
+  Change: 2fafa1190eb79118ce5c47b84ee08d416b98a856
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2010-05-17 22:30:11 +0000
+
+    Updated MANIFEST 
+
+  Change: c1acff3f67391e600527e964234205eb02a0ccff
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2010-05-17 22:20:47 +0000
+
+    Added Changes file 
+
+  Change: 47fea54726e43888666805cc65a809187f1ddc4b
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2010-05-17 22:11:38 +0000
+
+    Added exported function 
+
+  Change: e632a026c63aedb78f6eb9670994e832e7ea6511
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2010-05-17 21:52:25 +0000
+
+    Patch in. 
+
+================
+End of releases.
+================
