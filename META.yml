@@ -22,4 +22,4 @@ requires:
 resources:
   homepage: https://github.com/bingos/devel-patchperl
   repository: https://github.com/bingos/devel-patchperl.git
-version: 0.78
+version: 0.80

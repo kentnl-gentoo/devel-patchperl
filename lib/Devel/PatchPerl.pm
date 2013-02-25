@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 {
-  $Devel::PatchPerl::VERSION = '0.78';
+  $Devel::PatchPerl::VERSION = '0.80';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
@@ -273,12 +273,17 @@ sub _determine_version {
 }
 
 sub _patch_hints {
-  return unless my ($file,$data) = hint_file();
-  my $path = File::Spec->catfile( 'hints', $file );
-  chmod 0644, $path or die "$!\n";
-  open my $fh, '>', $path or die "$!\n";
-  print $fh $data;
-  close $fh;
+  my @os;
+  push @os, $^O;
+  push @os, 'linux' if $^O eq 'gnukfreebsd'; # kfreebsd uses linux hints
+  foreach my $os ( @os ) {
+    return unless my ($file,$data) = hint_file( $os );
+    my $path = File::Spec->catfile( 'hints', $file );
+    chmod 0644, $path or die "$!\n";
+    open my $fh, '>', $path or die "$!\n";
+    print $fh $data;
+    close $fh;
+  }
   return 1;
 }
 
@@ -1813,7 +1818,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 0.78
+version 0.80
 
 =head1 SYNOPSIS
 

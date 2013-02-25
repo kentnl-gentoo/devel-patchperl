@@ -1,6 +1,28 @@
 ==================================================
-Changes from 2008-02-19 00:00:00 +0000 to present.
+Changes from 2008-02-27 00:00:00 +0000 to present.
 ==================================================
+
+-----------------------------------------
+version 0.80 at 2013-02-25 12:04:03 +0000
+-----------------------------------------
+
+  Change: ef4dfcccd90f7f786847998cba8891b69fd5a2e1
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-02-25 12:04:03 +0000
+
+    Bump version to 0.80 
+
+  Change: 4e3020edfa3b3adcb79dd4d3c8e410f8cb12bf53
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-02-25 12:02:09 +0000
+
+    Ensure that the linux hints file gets updated for kfreebsd as well 
+
+  Change: 52fde6650e6a6324c7817fb81d9d08260f73d96a
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-02-25 11:41:38 +0000
+
+    Add updated hints for gnukfreebsd 
 
 -----------------------------------------
 version 0.78 at 2013-02-17 16:58:31 +0000

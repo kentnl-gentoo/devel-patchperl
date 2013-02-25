@@ -1,6 +1,6 @@
 package Devel::PatchPerl::Hints;
 {
-  $Devel::PatchPerl::Hints::VERSION = '0.78';
+  $Devel::PatchPerl::Hints::VERSION = '0.80';
 }
 
 #ABSTRACT: replacement 'hints' files
@@ -1262,6 +1262,10 @@ byBiZSB0aHJlYWRzYWZlIGluIE1pZG5pZ2h0QlNEPwoJY2FzZSAiJHVzZW15bWFsbG9jIiBpbgoJ
 JycpIHVzZW15bWFsbG9jPW4gOzsKCWVzYWMKZXNhYwpFT0NCVQoKIyBtYWxsb2Mgd3JhcCB3b3Jr
 cwpjYXNlICIkdXNlbWFsbG9jd3JhcCIgaW4KJycpIHVzZW1hbGxvY3dyYXA9J2RlZmluZScgOzsK
 ZXNhYwo=',
+'gnukfreebsd' =>
+'IyEgL2Jpbi9zaAoKIyBTdXBwb3J0IGZvciBEZWJpYW4gR05VL2tGcmVlQlNEIChrZnJlZWJzZC1n
+bnUpCiMgQSBwb3J0IG9mIHRoZSBEZWJpYW4gR05VIHN5c3RlbSB1c2luZyB0aGUgRnJlZUJTRCBr
+ZXJuZWwuCgouIC4vaGludHMvbGludXguc2gKCg==',
 );
 
 my %files = (
@@ -1274,6 +1278,7 @@ my %files = (
   'hpux' => 'hpux.sh',
   'cygwin' => 'cygwin.sh',
   'midnightbsd' => 'midnightbsd.sh',
+  'gnukfreebsd' => 'gnukfreebsd.sh',
 );
 
 sub hint_file {
@@ -1298,7 +1303,7 @@ Devel::PatchPerl::Hints - replacement 'hints' files
 
 =head1 VERSION
 
-version 0.78
+version 0.80
 
 =head1 SYNOPSIS
 
