@@ -15,11 +15,10 @@ name: Devel-PatchPerl
 requires:
   File::pushd: 1.00
   IO::File: 0
-  IPC::Cmd: 0.40
   MIME::Base64: 0
   Module::Pluggable: 0
   perl: v5.6.0
 resources:
   homepage: https://github.com/bingos/devel-patchperl
   repository: https://github.com/bingos/devel-patchperl.git
-version: 0.82
+version: 0.84

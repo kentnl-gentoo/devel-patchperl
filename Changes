@@ -1,6 +1,18 @@
 ==================================================
-Changes from 2008-02-27 00:00:00 +0000 to present.
+Changes from 2008-03-09 00:00:00 +0000 to present.
 ==================================================
+
+-----------------------------------------
+version 0.84 at 2013-03-08 21:35:14 +0000
+-----------------------------------------
+
+  Change: 7b5f0d6c51dbff9a22f250813e230816d3d36f08
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-03-08 21:35:14 +0000
+
+    Remove requirement on IPC::Cmd
+
+    This should make the perlbrew peeps happy 
 
 -----------------------------------------
 version 0.82 at 2013-02-25 21:38:08 +0000
