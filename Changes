@@ -1,6 +1,32 @@
 ==================================================
-Changes from 2008-03-09 00:00:00 +0000 to present.
+Changes from 2008-05-09 00:00:00 +0000 to present.
 ==================================================
+
+-----------------------------------------
+version 0.86 at 2013-05-08 15:39:07 +0000
+-----------------------------------------
+
+  Change: 50d0a6e5c2b5f25de596463f219c78204e0ae477
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-05-08 16:39:07 +0000
+
+    Bump version 
+
+  Change: 09c3d04f1eddb60cdbba7b597a9c114c7396be2f
+  Author: Chris Williams <chris@bingosnet.co.uk>
+  Date : 2013-05-08 08:11:48 +0000
+
+    Merge pull request #11 from hirose31/prevent-premature-hsplit
+
+    Add patch on prevent premature hsplit for Perl 5.8.[89], 5.10.1,
+    5.12.5 
+
+  Change: 19a38ec13e6634a4707bb5043da051b6c551c23f
+  Author: HIROSE Masaaki <hirose31@gmail.com>
+  Date : 2013-05-08 13:52:42 +0000
+
+    Add patch on prevent premature hsplit for Perl 5.8.[89], 5.10.1,
+    5.12.5 
 
 -----------------------------------------
 version 0.84 at 2013-03-08 21:35:14 +0000
