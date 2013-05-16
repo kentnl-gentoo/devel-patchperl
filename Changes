@@ -1,6 +1,18 @@
 ==================================================
-Changes from 2008-05-09 00:00:00 +0000 to present.
+Changes from 2008-05-17 00:00:00 +0000 to present.
 ==================================================
+
+-----------------------------------------
+version 0.88 at 2013-05-16 12:02:55 +0000
+-----------------------------------------
+
+  Change: 7a381f7a969eeb683343ddc3511169298aa19889
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-05-16 13:02:55 +0000
+
+    Make determine_version() available in the public API
+
+    https://github.com/bingos/devel-patchperl/issues/12 
 
 -----------------------------------------
 version 0.86 at 2013-05-08 15:39:07 +0000

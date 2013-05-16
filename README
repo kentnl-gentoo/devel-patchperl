@@ -2,7 +2,7 @@ NAME
     Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 VERSION
-    version 0.86
+    version 0.88
 
 SYNOPSIS
       use strict;
@@ -26,6 +26,14 @@ FUNCTION
 
         If you don't supply a "perl" version, it will attempt to
         auto-determine the "perl" version from the specified path.
+
+        If you don't supply the path to unwrapped perl source, it will
+        assume the current working directory.
+
+    "determine_version"
+        Takes one optional parameter, the path to unwrapped perl source. It
+        returns the perl version of the source code at the given location.
+        It returns undef on error.
 
         If you don't supply the path to unwrapped perl source, it will
         assume the current working directory.

@@ -14,6 +14,7 @@ t/00-compile.t
 t/01-hints.t
 t/02_vers.t
 t/03_plugin.t
+t/borken/patchlevel.h
 t/lib/Devel/PatchPerl/Plugin/TEST.pm
 t/modern/patchlevel.h
 t/old/patchlevel.h
