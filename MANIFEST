@@ -20,3 +20,4 @@ t/modern/patchlevel.h
 t/old/patchlevel.h
 t/release-pod-coverage.t
 t/release-pod-syntax.t
+tools/audit_hints.pl

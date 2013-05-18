@@ -1,6 +1,44 @@
 ==================================================
-Changes from 2008-05-17 00:00:00 +0000 to present.
+Changes from 2008-05-19 00:00:00 +0000 to present.
 ==================================================
+
+-----------------------------------------
+version 0.90 at 2013-05-18 22:58:06 +0000
+-----------------------------------------
+
+  Change: fe0a97026ae5a56374b1d9a5968554a0c9b693bc
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-05-18 23:58:06 +0000
+
+    Bumped version to 0.90 
+
+  Change: cc5a37b1298b45fe2e74a4db92e85561a12f1052
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-05-18 23:50:04 +0000
+
+    Added gcc m64 fixes for Solaris 11
+
+    http://perl5.git.perl.org/perl.git/commitdiff/1ddb6a4
+
+    http://perl5.git.perl.org/perl.git/commitdiff/767f54d 
+
+  Change: 815ff70a8a86c97742a0afdc5a092c590c729e80
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-05-18 22:04:29 +0000
+
+    Update hpux hints 
+
+  Change: 089592af98239448a956586cf8998dee7b2ab7b6
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-05-18 21:46:55 +0000
+
+    Added hints audit tool 
+
+  Change: 842e6a11a1dac1adfa253a4a9dbd60d53286fa8e
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-05-18 18:24:52 +0000
+
+    Added 'hints' function to Devel::PatchPerl::Hints 
 
 -----------------------------------------
 version 0.88 at 2013-05-16 12:02:55 +0000

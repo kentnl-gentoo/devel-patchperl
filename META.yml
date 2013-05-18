@@ -21,4 +21,4 @@ requires:
 resources:
   homepage: https://github.com/bingos/devel-patchperl
   repository: https://github.com/bingos/devel-patchperl.git
-version: 0.88
+version: 0.90
