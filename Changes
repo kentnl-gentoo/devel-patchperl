@@ -1,6 +1,24 @@
 ==================================================
-Changes from 2008-07-09 00:00:00 +0000 to present.
+Changes from 2008-07-26 00:00:00 +0000 to present.
 ==================================================
+
+-----------------------------------------
+version 0.98 at 2013-07-25 08:53:30 +0000
+-----------------------------------------
+
+  Change: 5e3d365324bb2ffa0ff756cb021fc98c2de87e57
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-07-25 09:53:30 +0000
+
+    Bump to version 0.98 
+
+  Change: 0b699704fd0bfe61274270253a758e15157a0e4b
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-07-25 09:51:26 +0000
+
+    Fix issues with patching Configure under Solaris
+
+    https://github.com/gugod/App-perlbrew/issues/355 
 
 -----------------------------------------
 version 0.96 at 2013-07-08 06:53:34 +0000

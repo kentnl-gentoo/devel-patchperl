@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 {
-  $Devel::PatchPerl::VERSION = '0.96';
+  $Devel::PatchPerl::VERSION = '0.98';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
@@ -2131,11 +2131,14 @@ END
 
 sub _patch_conf_solaris {
   return unless $^O eq 'solaris';
+  my $perlver = shift;
+  my $num = eval "v$perlver";
+  return unless $num lt eval "v5.18.0";
   _patch(<<'BUBBLE');
 diff --git a/Configure b/Configure
 index ff511d3..30ab78a 100755
---- a/Configure
-+++ b/Configure
+--- Configure
++++ Configure
 @@ -8048,7 +8048,20 @@ EOM
  			      ;;
  			linux|irix*|gnu*)  dflt="-shared $optimize" ;;
@@ -2254,7 +2257,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 0.96
+version 0.98
 
 =head1 SYNOPSIS
 
