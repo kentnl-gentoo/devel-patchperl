@@ -1,6 +1,6 @@
 package Devel::PatchPerl::Hints;
 {
-  $Devel::PatchPerl::Hints::VERSION = '0.98';
+  $Devel::PatchPerl::Hints::VERSION = '1.00';
 }
 
 #ABSTRACT: replacement 'hints' files
@@ -1709,7 +1709,7 @@ Devel::PatchPerl::Hints - replacement 'hints' files
 
 =head1 VERSION
 
-version 0.98
+version 1.00
 
 =head1 SYNOPSIS
 

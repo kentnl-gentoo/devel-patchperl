@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 {
-  $Devel::PatchPerl::VERSION = '0.98';
+  $Devel::PatchPerl::VERSION = '1.00';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
@@ -280,6 +280,7 @@ sub _patch
   my $diff = 'tmp.diff';
   _write_or_die($diff, $patch);
   die "No patch utility found\n" unless $patch_exe;
+  local $ENV{PATCH_GET} = 0; # I can't reproduce this at all, but meh.
   _run_or_die("$patch_exe -f -s -p0 <$diff");
   unlink $diff or die "unlink $diff: $!\n";
 }
@@ -2257,7 +2258,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 0.98
+version 1.00
 
 =head1 SYNOPSIS
 
