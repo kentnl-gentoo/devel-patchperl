@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 {
-  $Devel::PatchPerl::VERSION = '1.04';
+  $Devel::PatchPerl::VERSION = '1.06';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
@@ -2139,8 +2139,8 @@ sub _patch_bitrig {
   _patch(<<'BOOGLE');
 diff --git a/Configure b/Configure
 index 19bed50..e4e4075 100755
---- a/Configure
-+++ b/Configure
+--- Configure
++++ Configure
 @@ -3312,6 +3312,9 @@ EOM
  			;;
  		next*) osname=next ;;
@@ -2162,8 +2162,8 @@ index 19bed50..e4e4075 100755
  	bsdos|linux|irix*|dec_osf|gnu*)
 diff --git a/Makefile.SH b/Makefile.SH
 index 17298fa..ecaa8ac 100755
---- a/Makefile.SH
-+++ b/Makefile.SH
+--- Makefile.SH
++++ Makefile.SH
 @@ -77,7 +77,7 @@ true)
  	sunos*)
  		linklibperl="-lperl"
@@ -2294,7 +2294,7 @@ BOBBLE
 
 sub _norm_ver {
   my $ver = shift;
-  my @v = split(qr/[._]0*/, $_);
+  my @v = split(qr/[._]0*/, $ver);
   $v[2] ||= 0;
   return sprintf '%d.%03d%03d', @v;
 }
@@ -2311,7 +2311,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 1.04
+version 1.06
 
 =head1 SYNOPSIS
 
