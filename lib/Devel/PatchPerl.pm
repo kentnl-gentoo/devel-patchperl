@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 {
-  $Devel::PatchPerl::VERSION = '1.08';
+  $Devel::PatchPerl::VERSION = '1.10';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
@@ -341,7 +341,9 @@ sub _patch_hints {
   foreach my $os ( @os ) {
     return unless my ($file,$data) = hint_file( $os );
     my $path = File::Spec->catfile( 'hints', $file );
-    chmod 0644, $path or die "$!\n";
+    if ( -e $path ) {
+      chmod 0644, $path or die "$!\n";
+    }
     open my $fh, '>', $path or die "$!\n";
     print $fh $data;
     close $fh;
@@ -2396,7 +2398,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 1.08
+version 1.10
 
 =head1 SYNOPSIS
 

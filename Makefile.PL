@@ -28,7 +28,7 @@ my %WriteMakefileArgs = (
     "Module::Pluggable" => 0
   },
   "TEST_REQUIRES" => {},
-  "VERSION" => "1.08",
+  "VERSION" => "1.10",
   "test" => {
     "TESTS" => "t/*.t"
   }
