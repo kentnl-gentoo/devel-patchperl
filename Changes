@@ -1,6 +1,22 @@
 ==================================================
-Changes from 2008-07-26 00:00:00 +0000 to present.
+Changes from 2008-08-23 00:00:00 +0000 to present.
 ==================================================
+
+-----------------------------------------
+version 1.02 at 2013-08-22 20:12:47 +0000
+-----------------------------------------
+
+  Change: cdd0d8342146cdcb03638aadb3ccb67cb96f70e1
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-08-22 21:12:47 +0000
+
+    Handle version number comparisons in a saner manner 
+
+  Change: 0120ad2d8b6ec5091ed47771c656e812ff991f37
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-08-22 19:38:13 +0000
+
+    Added support for Bitrig 
 
 -----------------------------------------
 version 1.00 at 2013-07-25 10:37:01 +0000
