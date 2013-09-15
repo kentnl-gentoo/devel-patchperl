@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 {
-  $Devel::PatchPerl::VERSION = '1.10';
+  $Devel::PatchPerl::VERSION = '1.12';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
@@ -2398,7 +2398,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 1.10
+version 1.12
 
 =head1 SYNOPSIS
 
