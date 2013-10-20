@@ -1,6 +1,6 @@
 package Devel::PatchPerl;
 {
-  $Devel::PatchPerl::VERSION = '1.12';
+  $Devel::PatchPerl::VERSION = '1.14';
 }
 
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
@@ -94,6 +94,15 @@ my @patch = (
     subs => [
               [ \&_patch_configure ],
               [ \&_patch_makedepend_lc ],
+            ],
+  },
+  {
+    perl => [
+              qr/^5\.6\.[0-2]$/,
+            ],
+    subs => [
+              [ \&_patch_conf_gconvert ],
+              [ \&_patch_sort_N ],
             ],
   },
   {
@@ -1751,6 +1760,61 @@ BADGER
   }
 }
 
+sub _patch_conf_gconvert
+{
+  my $perl = shift;
+  _patch(<<'END');
+--- Configure
++++ Configure
+@@ -7851,6 +7851,21 @@ int main()
+ 	Gconvert((DOUBLETYPE)0.1, 8, 0, buf);
+ 	checkit("0.1", buf);
+ 
++	Gconvert((DOUBLETYPE)0.01, 8, 0, buf);
++	checkit("0.01", buf);
++
++	Gconvert((DOUBLETYPE)0.001, 8, 0, buf);
++	checkit("0.001", buf);
++
++	Gconvert((DOUBLETYPE)0.0001, 8, 0, buf);
++	checkit("0.0001", buf);
++
++	Gconvert((DOUBLETYPE)0.00009, 8, 0, buf);
++	if (strlen(buf) > 5)
++	    checkit("9e-005", buf); /* for Microsoft ?? */
++	else
++	    checkit("9e-05", buf);
++
+ 	Gconvert((DOUBLETYPE)1.0, 8, 0, buf); 
+ 	checkit("1", buf);
+ 
+@@ -7889,6 +7904,19 @@ int main()
+ 	Gconvert((DOUBLETYPE)123.456, 8, 0, buf); 
+ 	checkit("123.456", buf);
+ 
++	/* Testing of 1e+129 in bigintpm.t must not get extra '.' here. */
++	Gconvert((DOUBLETYPE)1e34, 8, 0, buf);
++	/* 34 should be enough to scare even long double
++	 * places into using the e notation. */
++	if (strlen(buf) > 5)
++	    checkit("1e+034", buf); /* for Microsoft */
++	else
++	    checkit("1e+34", buf);
++
++	/* For Perl, if you add additional tests here, also add them to
++	 * t/base/num.t for benefit of platforms not using Configure or
++	 * overriding d_Gconvert */
++
+ 	exit(0);
+ }
+ EOP
+END
+}
+
+sub _patch_sort_N {
+  system($^X, '-pi.bak', '-e', 's!\$sort \-n \+1!(\$sort -n -k 2 2>/dev/null || \$sort -n +1)!', 'Configure');
+}
+
 sub _patch_archive_tar_tests
 {
   my $perl = shift;
@@ -2398,7 +2462,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 1.12
+version 1.14
 
 =head1 SYNOPSIS
 

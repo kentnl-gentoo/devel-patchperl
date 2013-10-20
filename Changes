@@ -1,6 +1,38 @@
 ==================================================
-Changes from 2008-09-16 00:00:00 +0000 to present.
+Changes from 2008-10-21 00:00:00 +0000 to present.
 ==================================================
+
+-----------------------------------------
+version 1.14 at 2013-10-20 15:38:09 +0000
+-----------------------------------------
+
+  Change: 0b1f81c0ce692a37bc8552cd278e90c0d0a3122c
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2013-10-20 16:38:09 +0000
+
+    RT#89635 Configure on 5.6 uses sort +N, which isn't supported by
+    modern sort(1)
+
+    The two instances of 'sort -n +1' in Configure on perl 5.6 need to be
+    replaced with the portable equivalent used since perl 5.7.3:
+
+    ($sort -n -k 2 2>/dev/null || $sort -n +1)
+
+    This works on both old and new sorts. 
+
+  Change: 9989391d5011cb1d518db37a32e9b8eeefafcc9a
+  Author: Chris Williams <chris@bingosnet.co.uk>
+  Date : 2013-09-25 12:19:09 +0000
+
+    Merge pull request #14 from haarg/gconvert-5.6
+
+    better gconvert detection 
+
+  Change: 0003e6aeaf8c055074b75ceea5accb22025ce776
+  Author: Graham Knop <haarg@haarg.org>
+  Date : 2013-09-25 10:30:53 +0000
+
+    better gconvert detection 
 
 -----------------------------------------
 version 1.12 at 2013-09-15 20:31:14 +0000
