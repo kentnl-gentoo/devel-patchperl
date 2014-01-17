@@ -1,8 +1,5 @@
 package Devel::PatchPerl;
-{
-  $Devel::PatchPerl::VERSION = '1.14';
-}
-
+$Devel::PatchPerl::VERSION = '1.16';
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
 
 use strict;
@@ -32,6 +29,15 @@ my @patch = (
             ],
     subs => [
               [ \&_patch_db, 1 ],
+            ],
+  },
+  {
+    perl => [
+              qr/^5\.6\.[1-2]$/,
+              qr/^5\.7\.[0-1]$/,
+            ],
+    subs => [
+              [ \&_patch_makefile_sh_phony ],
             ],
   },
   {
@@ -363,9 +369,11 @@ sub _patch_hints {
 sub _patch_db
 {
   my $ver = shift;
-  print "patching ext/DB_File/DB_File.xs\n";
-  _run_or_die($^X, '-pi.bak', '-e', "s/<db.h>/<db$ver\\/db.h>/", 'ext/DB_File/DB_File.xs');
-  unlink 'ext/DB_File/DB_File.xs.bak' if -e 'ext/DB_File/DB_File.xs.bak';
+  for my $file ('ext/DB_File/DB_File.xs', 'Configure') {
+    print "patching $file\n";
+    _run_or_die($^X, '-pi.bak', '-e', "s/<db.h>/<db$ver\\/db.h>/", $file);
+    unlink "$file.bak" if -e "$file.bak";
+  }
 }
 
 sub _patch_doio
@@ -2443,6 +2451,46 @@ index 2244fdf..9a9b5f5 100644
 BOBBLE
 }
 
+sub _patch_makefile_sh_phony {
+  _patch(<<'END');
+diff --git a/Makefile.SH b/Makefile.SH
+index ac5ade4..8e66603 100755
+--- Makefile.SH
++++ Makefile.SH
+@@ -295,6 +295,30 @@ obj = $(obj1) $(obj2) $(obj3) $(ARCHOBJS)
+ # EMBEDDING is on by default, and MULTIPLICITY doesn't work.
+ #
+
++.PHONY: all compile translators utilities \
++       FORCE \
++       preplibrary \
++       install install-strip install-all install-verbose install-silent \
++       no-install install.perl install.man installman install.html installhtml \
++       check_byacc run_byacc \
++       regen_headers regen_pods regen_all \
++       clean _tidy _mopup _cleaner1 _cleaner2 \
++       realclean _realcleaner clobber _clobber \
++       distclean veryclean _verycleaner \
++       lint \
++       depend \
++       test check test_prep _test_prep \
++       test_tty test-tty _test_tty test_notty test-notty _test_notty \
++       utest ucheck test.utf8 check.utf8 \
++       test.third check.third utest.third ucheck.third test_notty.third \
++       test.deparse test_notty.deparse \
++       minitest \
++       ok okfile oknack okfilenack nok nokfile noknack nokfilenack \
++       clist hlist shlist pllist \
++       distcheck \
++       elc \
++       etags ctags tags
++
+ lintflags = -hbvxac
+
+ .c$(OBJ_EXT):
+END
+}
+
 sub _norm_ver {
   my $ver = shift;
   my @v = split(qr/[._]0*/, $ver);
@@ -2456,13 +2504,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 1.14
+version 1.16
 
 =head1 SYNOPSIS
 
@@ -2528,7 +2578,7 @@ Chris Williams <chris@bingosnet.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Chris Williams and Marcus Holland-Moritz.
+This software is copyright (c) 2014 by Chris Williams and Marcus Holland-Moritz.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

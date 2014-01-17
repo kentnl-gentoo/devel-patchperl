@@ -1,6 +1,44 @@
 ==================================================
-Changes from 2008-10-21 00:00:00 +0000 to present.
+Changes from 2009-01-18 00:00:00 +0000 to present.
 ==================================================
+
+-----------------------------------------
+version 1.16 at 2014-01-17 10:59:57 +0000
+-----------------------------------------
+
+  Change: 8a3d35406361540497404dd1a3825394fd47f8d7
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2014-01-17 10:59:57 +0000
+
+    Release engineering for 1.16 
+
+  Change: 7e4ab3377588f8f63de4ddc19d1f4cbf966a896c
+  Author: Chris Williams <chris@bingosnet.co.uk>
+  Date : 2014-01-16 16:55:37 +0000
+
+    Merge pull request #16 from haarg/extra-phony
+
+    add extra phony targets to help case insensitive file systems 
+
+  Change: c1be34c45a96334f90eb97020deb278e25de12cd
+  Author: Chris Williams <chris@bingosnet.co.uk>
+  Date : 2014-01-16 16:54:50 +0000
+
+    Merge pull request #15 from haarg/db-configure
+
+    Configure should check same Berkeley DB header DB_File uses 
+
+  Change: fd70e1b3b18dd093a25442c0c6fb473d1b06fee6
+  Author: Graham Knop <haarg@haarg.org>
+  Date : 2014-01-16 19:34:54 +0000
+
+    add extra phony targets to help case insensitive file systems 
+
+  Change: da7a9f9303fd2fc4a8668660893b0dc0c2229751
+  Author: Graham Knop <haarg@haarg.org>
+  Date : 2014-01-14 11:54:06 +0000
+
+    Configure should check same Berkeley DB header DB_File uses 
 
 -----------------------------------------
 version 1.14 at 2013-10-20 15:38:09 +0000
@@ -525,7 +563,7 @@ version 0.46 at 2011-08-05 16:58:57 +0000
     build older Perls on recent Ubuntu machines. 
 
   Change: 24a8cdc2c70a2ecea2573c3152e75be1824657ce
-  Author: Ævar Arnfjörð Bjarmason <avarab@gmail.com>
+  Author: Ãvar ArnfjÃ¶rÃ° Bjarmason <avarab@gmail.com>
   Date : 2011-08-05 07:23:51 +0000
 
     Merge pull request #6 from uwe/master
@@ -671,7 +709,7 @@ version 0.32 at 2011-05-09 10:36:45 +0000
     Add another sub-test to the hints file test. 
 
   Change: 36ffd70f3544ffe7923d784d092c7c6842c15bf9
-  Author: Ævar Arnfjörð Bjarmason <avarab@gmail.com>
+  Author: Ãvar ArnfjÃ¶rÃ° Bjarmason <avarab@gmail.com>
   Date : 2011-05-08 14:15:17 +0000
 
     Merge pull request #1 from autarch/master
