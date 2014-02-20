@@ -4,21 +4,21 @@ author:
   - 'Chris Williams <chris@bingosnet.co.uk>'
 build_requires: {}
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  ExtUtils::MakeMaker: '6.30'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.012, CPAN::Meta::Converter version 2.133380'
+generated_by: 'Dist::Zilla version 5.013, CPAN::Meta::Converter version 2.133380'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Devel-PatchPerl
 requires:
-  File::pushd: 1.00
-  IO::File: 0
-  MIME::Base64: 0
-  Module::Pluggable: 0
+  File::pushd: '1.00'
+  IO::File: '0'
+  MIME::Base64: '0'
+  Module::Pluggable: '0'
   perl: v5.6.0
 resources:
   homepage: https://github.com/bingos/devel-patchperl
   repository: https://github.com/bingos/devel-patchperl.git
-version: 1.16
+version: '1.18'
