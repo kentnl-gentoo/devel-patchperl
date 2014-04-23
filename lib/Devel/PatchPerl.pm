@@ -1,5 +1,5 @@
 package Devel::PatchPerl;
-$Devel::PatchPerl::VERSION = '1.20';
+$Devel::PatchPerl::VERSION = '1.22';
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
 
 use strict;
@@ -14,7 +14,7 @@ use vars qw[@ISA @EXPORT_OK];
 @ISA       = qw(Exporter);
 @EXPORT_OK = qw(patch_source);
 
-my $patch_exe = _can_run('patch');
+my $patch_exe = _can_run('patch') || _can_run('gpatch');
 
 my @patch = (
   {
@@ -2512,7 +2512,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 1.20
+version 1.22
 
 =head1 SYNOPSIS
 
