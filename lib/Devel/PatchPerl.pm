@@ -1,5 +1,5 @@
 package Devel::PatchPerl;
-$Devel::PatchPerl::VERSION = '1.24';
+$Devel::PatchPerl::VERSION = '1.26';
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
 
 use strict;
@@ -182,6 +182,20 @@ my @patch = (
               qr/^5\.20\.0$/,
             ],
     subs => [ [ \&_patch_cow_speed ] ],
+  },
+  {
+    perl => [
+              qr/^5\.6\.[012]$/,
+              qr/^5\.8\.[89]$/,
+              qr/^5\.10\.[01]$/,
+            ],
+    subs => [ [ \&_patch_preprocess_options ] ],
+  },
+  {
+    perl => [
+              qr/^5\.18\.3$/,
+            ],
+    subs => [ [ \&_patch_5183_metajson ] ],
   },
 );
 
@@ -2537,6 +2551,62 @@ index 06c0b83..ac1d972 100644
 COWSAY
 }
 
+sub _patch_preprocess_options {
+  my $perl = shift;
+
+  if ($perl =~ /^5\.(?:8|10)\./) {
+    _patch(<<'END');
+diff --git a/perl.c b/perl.c
+index 82e5538..b9e02fe 100644
+--- perl.c
++++ perl.c
+@@ -3758,7 +3758,7 @@ S_open_script(pTHX_ const char *scriptname, bool dosearch, SV *sv,
+ #       ifdef VMS
+             cpp_discard_flag = "";
+ #       else
+-            cpp_discard_flag = "-C";
++            cpp_discard_flag = "-C -ffreestanding";
+ #       endif
+ 
+ #       ifdef OS2
+END
+  } elsif ($perl =~ /^5\.6\./) {
+    _patch(<<'END');
+diff --git a/perl.c b/perl.c
+index 623f9be..014d318 100644
+--- perl.c
++++ perl.c
+@@ -2631,7 +2631,7 @@ sed %s -e \"/^[^#]/b\" \
+  -e '/^#[ 	]*undef[ 	]/b' \
+  -e '/^#[ 	]*endif/b' \
+  -e 's/^[ 	]*#.*//' \
+- %s | %"SVf" -C %"SVf" %s",
++ %s | %"SVf" -C -ffreestanding %"SVf" %s",
+ #  endif
+ #ifdef LOC_SED
+ 	  LOC_SED,
+END
+  }
+}
+
+sub _patch_5183_metajson {
+_patch(<<'DOGSAY');
+diff --git a/META.json b/META.json
+index 64caea7..200e324 100644
+--- a/META.json
++++ b/META.json
+@@ -118,7 +118,7 @@
+          "TestInit.pm"
+       ]
+    },
+-   "release_status" : "testing",
++   "release_status" : "stable",
+    "resources" : {
+       "bugtracker" : {
+          "web" : "http://rt.perl.org/perlbug/"
+DOGSAY
+}
+
 sub _norm_ver {
   my $ver = shift;
   my @v = split(qr/[._]0*/, $ver);
@@ -2558,7 +2628,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 1.24
+version 1.26
 
 =head1 SYNOPSIS
 

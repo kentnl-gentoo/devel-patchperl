@@ -1,6 +1,42 @@
 ==================================================
-Changes from 2009-06-01 00:00:00 +0000 to present.
+Changes from 2009-10-03 00:00:00 +0000 to present.
 ==================================================
+
+-----------------------------------------
+version 1.26 at 2014-10-02 20:17:19 +0000
+-----------------------------------------
+
+  Change: 92b1112f71c93511f92e9d05a3b8e5e2794efe87
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2014-10-02 21:17:19 +0000
+
+    Release engineering for 1.26 
+
+  Change: bd03bcc953cc4fde772216b42a11752599268223
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2014-10-02 21:16:51 +0000
+
+    Update included hints files 
+
+  Change: b31fee861de7216f54bb3a5e220fea7bccf48eba
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2014-10-02 21:13:57 +0000
+
+    Fix META.json on v5.18.3 
+
+  Change: 6641a5dbcfe4d3159d51488c9134f23b5c303755
+  Author: Chris Williams <chris@bingosnet.co.uk>
+  Date : 2014-10-02 21:04:35 +0000
+
+    Merge pull request #17 from threebytesfull/fix_preprocessing
+
+    Patch 5.6, 5.8 and 5.10 to use freestanding preprocessor 
+
+  Change: 35feb730a91d6e065b8c4001b9233461923aacd3
+  Author: Rufus Cable <rufus@threebytesfull.com>
+  Date : 2014-09-24 17:08:10 +0000
+
+    Patch 5.6, 5.8 and 5.10 to use freestanding preprocessor 
 
 -----------------------------------------
 version 1.24 at 2014-05-31 08:38:25 +0000
