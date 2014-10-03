@@ -1,5 +1,5 @@
 package Devel::PatchPerl;
-$Devel::PatchPerl::VERSION = '1.26';
+$Devel::PatchPerl::VERSION = '1.28';
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
 
 use strict;
@@ -2593,8 +2593,8 @@ sub _patch_5183_metajson {
 _patch(<<'DOGSAY');
 diff --git a/META.json b/META.json
 index 64caea7..200e324 100644
---- a/META.json
-+++ b/META.json
+--- META.json
++++ META.json
 @@ -118,7 +118,7 @@
           "TestInit.pm"
        ]
@@ -2628,7 +2628,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 1.26
+version 1.28
 
 =head1 SYNOPSIS
 

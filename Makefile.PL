@@ -27,7 +27,7 @@ my %WriteMakefileArgs = (
     "MIME::Base64" => 0,
     "Module::Pluggable" => 0
   },
-  "VERSION" => "1.26",
+  "VERSION" => "1.28",
   "test" => {
     "TESTS" => "t/*.t"
   }
