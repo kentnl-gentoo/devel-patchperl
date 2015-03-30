@@ -1,5 +1,5 @@
 package Devel::PatchPerl;
-$Devel::PatchPerl::VERSION = '1.30';
+$Devel::PatchPerl::VERSION = '1.32';
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
 
 use strict;
@@ -14,7 +14,7 @@ use vars qw[@ISA @EXPORT_OK];
 @ISA       = qw(Exporter);
 @EXPORT_OK = qw(patch_source);
 
-my $patch_exe = _can_run('patch') || _can_run('gpatch');
+my $patch_exe = _can_run('gpatch') || _can_run('patch');
 
 my @patch = (
   {
@@ -2652,7 +2652,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 1.30
+version 1.32
 
 =head1 SYNOPSIS
 
@@ -2718,7 +2718,7 @@ Chris Williams <chris@bingosnet.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Chris Williams and Marcus Holland-Moritz.
+This software is copyright (c) 2015 by Chris Williams and Marcus Holland-Moritz.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
