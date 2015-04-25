@@ -1,6 +1,48 @@
 ==================================================
-Changes from 2010-03-31 00:00:00 +0000 to present.
+Changes from 2010-04-26 00:00:00 +0000 to present.
 ==================================================
+
+-----------------------------------------
+version 1.34 at 2015-04-25 15:23:56 +0000
+-----------------------------------------
+
+  Change: 89bb0b402fb68d598d7f0499e18540fb4a1dae0f
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2015-04-25 16:23:56 +0000
+
+    Release engineering for 1.34 
+
+  Change: 5677b4c71e15af57d8fb359fda214f12abff88ba
+  Author: Chris Williams <chris@bingosnet.co.uk>
+  Date : 2015-04-17 17:19:35 +0000
+
+    Merge pull request #19 from wolfsage/topic/various-fixes
+
+    Topic/various fixes 
+
+  Change: 7e270ee6d6e9fe5b65a8794fc8884bcfa405e0b0
+  Author: Matthew Horsfall (alh) <wolfsage@gmail.com>
+  Date : 2015-04-17 07:10:05 +0000
+
+    Specific patch for 5.005 
+
+  Change: 97f4c4059de179e581a695ec7aa41a078cb4dddd
+  Author: Matthew Horsfall (alh) <wolfsage@gmail.com>
+  Date : 2015-04-17 06:58:28 +0000
+
+    Specific patches for 5.005_02 and 5.005_01 
+
+  Change: 91defd96b9246858f1f386e42f35aa5eea1b5c53
+  Author: Matthew Horsfall (alh) <wolfsage@gmail.com>
+  Date : 2015-04-17 06:14:25 +0000
+
+    Allow building of 5.005_0[34] on linux. 
+
+  Change: d81295c3de45538390e9a6573e371382a2d65026
+  Author: Matthew Horsfall (alh) <wolfsage@gmail.com>
+  Date : 2015-04-17 06:10:44 +0000
+
+    Updated hints files, necessary to build older Perls 
 
 -----------------------------------------
 version 1.32 at 2015-03-30 15:52:27 +0000

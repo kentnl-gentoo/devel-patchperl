@@ -1,5 +1,5 @@
 package Devel::PatchPerl::Hints;
-$Devel::PatchPerl::Hints::VERSION = '1.32';
+$Devel::PatchPerl::Hints::VERSION = '1.34';
 #ABSTRACT: replacement 'hints' files
 
 use strict;
@@ -1836,6 +1836,7 @@ IGdvZXMgZm9yIGRsZXJyb3IoKS4KY2FzZSAiJGNjIiBpbgoqZysrKnwqQ0MqKQogIGRfZGxvcGVu
 PSdkZWZpbmUnCiAgZF9kbGVycm9yPSdkZWZpbmUnCiAgOzsKZXNhYwoK',
 );
 
+
 my %files = (
   'freebsd' => 'freebsd.sh',
   'netbsd'  => 'netbsd.sh',
@@ -1880,7 +1881,7 @@ Devel::PatchPerl::Hints - replacement 'hints' files
 
 =head1 VERSION
 
-version 1.32
+version 1.34
 
 =head1 SYNOPSIS
 
