@@ -1,5 +1,5 @@
 package Devel::PatchPerl;
-$Devel::PatchPerl::VERSION = '1.38';
+$Devel::PatchPerl::VERSION = '1.40';
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
 
 use strict;
@@ -183,6 +183,7 @@ my @patch = (
               [ \&_patch_bitrig ],
               [ \&_patch_hints ],
               [ \&_patch_patchlevel ],
+              [ \&_patch_develpatchperlversion ],
               [ \&_patch_errno_gcc5 ],
             ],
   },
@@ -5972,6 +5973,25 @@ sub _norm_ver {
   return sprintf '%d.%03d%03d', @v;
 }
 
+sub _patch_develpatchperlversion {
+  my $dpv = $Devel::PatchPerl::VERSION || "(unreleased)";
+  _patch(<<"END");
+diff --git a/Configure b/Configure
+index e12c8bb..1a8088f 100755
+--- Configure
++++ Configure
+@@ -25151,6 +25151,8 @@ zcat='\$zcat'
+ zip='\$zip'
+ EOT
+ 
++echo "BuiltWithPatchPerl='$dpv'" >>config.sh
++
+ : add special variables
+ \$test -f \$src/patchlevel.h && \
+ awk '/^#define[ 	]+PERL_/ {printf "\%s=\%s\\n",\$2,\$3}' \$src/patchlevel.h >>config.sh
+END
+}
+
 qq[patchin'];
 
 __END__
@@ -5986,7 +6006,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 1.38
+version 1.40
 
 =head1 SYNOPSIS
 
