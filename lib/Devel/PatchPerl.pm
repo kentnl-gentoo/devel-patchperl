@@ -1,5 +1,5 @@
 package Devel::PatchPerl;
-$Devel::PatchPerl::VERSION = '1.40';
+$Devel::PatchPerl::VERSION = '1.42';
 # ABSTRACT: Patch perl source a la Devel::PPPort's buildperl.pl
 
 use strict;
@@ -429,6 +429,7 @@ sub _determine_version {
 
 # adapted from patchlevel.h for use with perls that predate it
 sub _patch_patchlevel {
+  return if -d '.git';
   my $dpv = $Devel::PatchPerl::VERSION || "(unreleased)";
   open my $plin, "patchlevel.h" or die "Couldn't open patchlevel.h : $!";
   open my $plout, ">patchlevel.new" or die "Couldn't write on patchlevel.new : $!";
@@ -5841,7 +5842,7 @@ index df68dc3..8385048 100644
      }
 END
   }
-  elsif ( $num < 5.007003 ) { # v5.6.0 et al
+  elsif ( $num < 5.007002 ) { # v5.6.0 et al
     _patch(<<'END');
 diff --git a/ext/Errno/Errno_pm.PL b/ext/Errno/Errno_pm.PL
 index 3f2f3e0..d8fe44e 100644
@@ -5866,6 +5867,45 @@ index 3f2f3e0..d8fe44e 100644
  	    open(CPPO,"$cpp  errno.c |") or
  		die "Cannot exec $Config{cppstdin}";
  	} elsif ($^O eq 'MSWin32') {
+-	    open(CPPO,"$Config{cpprun} $Config{cppflags} errno.c |") or
+-		die "Cannot run '$Config{cpprun} $Config{cppflags} errno.c'";
++           my $cpp = "$Config{cpprun} $Config{cppflags}" .
++               $inhibit_linemarkers;
++           open(CPPO,"$cpp errno.c |") or
++               die "Cannot run '$cpp errno.c'";
+ 	} else {
+-	    my $cpp = default_cpp();
++	    my $cpp = default_cpp() . $inhibit_linemarkers;
+ 	    open(CPPO,"$cpp < errno.c |")
+ 		or die "Cannot exec $cpp";
+ 	}
+END
+  }
+  elsif ( $num < 5.007003 ) { # v5.7.2
+    _patch(<<'END');
+diff --git a/ext/Errno/Errno_pm.PL b/ext/Errno/Errno_pm.PL
+index 3f2f3e0..d8fe44e 100644
+--- ext/Errno/Errno_pm.PL
++++ ext/Errno/Errno_pm.PL
+@@ -172,16 +172,26 @@ sub write_errno_pm {
+     unless ($^O eq 'MacOS') {	# trust what we have
+     # invoke CPP and read the output
+ 
++       my $inhibit_linemarkers = '';
++       if ($Config{gccversion} =~ /\A(\d+)\./ and $1 >= 5) {
++           # GCC 5.0 interleaves expanded macros with line numbers breaking
++           # each line into multiple lines. RT#123784
++           $inhibit_linemarkers = ' -P';
++       }
++
+ 	if ($^O eq 'VMS') {
+-	    my $cpp = "$Config{cppstdin} $Config{cppflags} $Config{cppminus}";
++	    my $cpp = "$Config{cppstdin} $Config{cppflags}" .
++        $inhibit_linemarkers . " $Config{cppminus}";
+ 	    $cpp =~ s/sys\$input//i;
+ 	    open(CPPO,"$cpp  errno.c |") or
+ 		die "Cannot exec $Config{cppstdin}";
+ 	} elsif ($^O eq 'MSWin32' || $^O eq 'NetWare') {
 -	    open(CPPO,"$Config{cpprun} $Config{cppflags} errno.c |") or
 -		die "Cannot run '$Config{cpprun} $Config{cppflags} errno.c'";
 +           my $cpp = "$Config{cpprun} $Config{cppflags}" .
@@ -5974,6 +6014,7 @@ sub _norm_ver {
 }
 
 sub _patch_develpatchperlversion {
+  return if -d '.git';
   my $dpv = $Devel::PatchPerl::VERSION || "(unreleased)";
   _patch(<<"END");
 diff --git a/Configure b/Configure
@@ -6006,7 +6047,7 @@ Devel::PatchPerl - Patch perl source a la Devel::PPPort's buildperl.pl
 
 =head1 VERSION
 
-version 1.40
+version 1.42
 
 =head1 SYNOPSIS
 
@@ -6072,7 +6113,7 @@ Chris Williams <chris@bingosnet.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2015 by Chris Williams and Marcus Holland-Moritz.
+This software is copyright (c) 2016 by Chris Williams and Marcus Holland-Moritz.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

@@ -1,5 +1,5 @@
 package Devel::PatchPerl::Hints;
-$Devel::PatchPerl::Hints::VERSION = '1.40';
+$Devel::PatchPerl::Hints::VERSION = '1.42';
 #ABSTRACT: replacement 'hints' files
 
 use strict;
@@ -367,7 +367,14 @@ b3J0cyBnY2MiKikgbG9jbGlicHRoPSIkbG9jbGlicHRoIC9vcHQvbG9jYWwvbGliL2xpYmdjYyIg
 OzsKZXNhYwoKIyMKIyBCdWlsZCBwcm9jZXNzCiMjCgojIENhc2UtaW5zZW5zaXRpdmUgZmlsZXN5
 c3RlbXMgZG9uJ3QgZ2V0IGFsb25nIHdpdGggTWFrZWZpbGUgYW5kCiMgbWFrZWZpbGUgaW4gdGhl
 IHNhbWUgcGxhY2UuICBTaW5jZSBEYXJ3aW4gdXNlcyBHTlUgbWFrZSwgdGhpcyBkb2RnZXMKIyB0
-aGUgcHJvYmxlbS4KZmlyc3RtYWtlZmlsZT1HTlVtYWtlZmlsZTsK',
+aGUgcHJvYmxlbS4KZmlyc3RtYWtlZmlsZT1HTlVtYWtlZmlsZTsKCiMgUGFydHMgb2YgdGhlIHN5
+c3RlbSBjYWxsIHNldGVudigpLCBpbiBwYXJ0aWN1bGFyIGluIGFuIGF0Zm9yayBoYW5kbGVyLgoj
+IFRoaXMgY2F1c2VzIHByb2JsZW1zIHdoZW4gdGhlIGNoaWxkIHRyaWVzIHRvIGNsZWFuIHVwIGVu
+dmlyb25bXSwgc28KIyBsZXQgbGliYyBtYW5hZ2UgZW52aXJvbltdLgpjYXQgPj4gY29uZmlnLm92
+ZXIgPDwnRU9PVkVSJwppZiB0ZXN0ICIkZF91bnNldGVudiIgPSAiJGRlZmluZSIgLWEgXAogICAg
+YGV4cHIgIiRjY2ZsYWdzIiA6ICcuKi1EUEVSTF9VU0VfU0FGRV9QVVRFTlYnYCAtZXEgMDsgdGhl
+bgogICAgICAgIGNjZmxhZ3M9IiRjY2ZsYWdzIC1EUEVSTF9VU0VfU0FGRV9QVVRFTlYiCmZpCkVP
+T1ZFUgo=',
 'dragonfly' =>
 'IyBoaW50cy9kcmFnb25mbHkuc2gKIwojIFRoaXMgZmlsZSBpcyBtb3N0bHkgY29waWVkIGZyb20g
 aGludHMvZnJlZWJzZC5zaCB3aXRoIHRoZSBPUyB2ZXJzaW9uCiMgaW5mb3JtYXRpb24gdGFrZW4g
@@ -1935,7 +1942,6 @@ ZyBwZXJsCiMgc2hhcmVkLCBvciBvdGhlcndpc2UgcGVybCBzY3JpcHRzIHdvbid0IGV2ZW4gZmlu
 ZCB0aGUgUGVybCBsaWJyYXJ5Lgp1c2VzaHJwbGliPSd0cnVlJwo=',
 );
 
-
 my %files = (
   'freebsd' => 'freebsd.sh',
   'netbsd'  => 'netbsd.sh',
@@ -1980,7 +1986,7 @@ Devel::PatchPerl::Hints - replacement 'hints' files
 
 =head1 VERSION
 
-version 1.40
+version 1.42
 
 =head1 SYNOPSIS
 
@@ -2043,7 +2049,7 @@ Chris Williams <chris@bingosnet.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2015 by Chris Williams and Marcus Holland-Moritz.
+This software is copyright (c) 2016 by Chris Williams and Marcus Holland-Moritz.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
