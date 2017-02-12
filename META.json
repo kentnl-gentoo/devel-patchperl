@@ -45,7 +45,7 @@
          "web" : "https://github.com/bingos/devel-patchperl"
       }
    },
-   "version" : "1.46",
-   "x_serialization_backend" : "Cpanel::JSON::XS version 3.0222"
+   "version" : "1.48",
+   "x_serialization_backend" : "Cpanel::JSON::XS version 3.0225"
 }
 

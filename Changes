@@ -1,6 +1,27 @@
 ==================================================
-Changes from 2011-11-23 00:00:00 +0000 to present.
+Changes from 2012-02-14 00:00:00 +0000 to present.
 ==================================================
+
+-----------------------------------------
+version 1.48 at 2017-02-12 18:32:39 +0000
+-----------------------------------------
+
+  Change: 5a47f8c8ee6a2658264412f66d010fd50820e304
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2017-02-12 18:32:39 +0000
+
+    Updated hints 
+
+  Change: cbdc230953a7bb62852d6f9bd65ea2ebecec935a
+  Author: David Golden <xdg@xdg.me>
+  Date : 2017-02-12 14:29:34 +0000
+
+    Patch Time::HiRes in 5.24.[01] (#26)
+
+    Time::HiRes is broken on threaded darwin in 5.24.0 and 5.24.1. This
+    patch brings in changes from blead that fix it. The patch is
+    unfortunately large, as untangling just the compilation fix from
+    other changes and still getting tests to pass wasn't straightforward. 
 
 -----------------------------------------
 version 1.46 at 2016-11-21 11:02:53 +0000
@@ -649,26 +670,6 @@ version 0.68 at 2012-04-03 09:06:44 +0000
 
     Updated hints files, includes support for NetBSD 6.* 
 
------------------------------------------
-version 0.66 at 2012-02-08 13:01:27 +0000
------------------------------------------
-
-  Change: 61579d54b0273fbfcb1ac39175ff641434a87103
-  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date : 2012-02-08 13:01:27 +0000
-
-    Added cygwin hints file 
-
------------------------------------------
-version 0.64 at 2012-02-04 14:40:40 +0000
------------------------------------------
-
-  Change: 31651f154271f81ce4b239366fa383e65c5b9355
-  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
-  Date : 2012-02-04 14:40:40 +0000
-
-    Added a plugin system 
-
 =================================================
-Plus 31 releases after 2011-11-23 00:00:00 +0000.
+Plus 33 releases after 2012-02-14 00:00:00 +0000.
 =================================================
